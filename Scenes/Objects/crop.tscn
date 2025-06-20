@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://dag75uc2qvcmc"]
+
+[ext_resource type="Script" uid="uid://bnjqar75jv2pw" path="res://Scenes/Objects/crop.gd" id="1_kqkgk"]
+[ext_resource type="Texture2D" uid="uid://chx1s1dd7vqcf" path="res://Graphics/UI/selectbox_tr.png" id="2_durd0"]
+[ext_resource type="Texture2D" uid="uid://cgd6ocfdpmnd6" path="res://Graphics/UI/selectbox_tl.png" id="3_o5yeg"]
+[ext_resource type="Texture2D" uid="uid://dtg366ufa3i7q" path="res://Graphics/UI/selectbox_br.png" id="4_qxnwp"]
+[ext_resource type="Texture2D" uid="uid://d3wyphv7nicmq" path="res://Graphics/UI/selectbox_bl.png" id="5_w3xjs"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kqkgk"]
+size = Vector2(15.5, 15)
+
+[node name="crop" type="Node2D"]
+script = ExtResource("1_kqkgk")
+
+[node name="plant" type="Sprite2D" parent="."]
+
+[node name="water" type="Timer" parent="."]
+
+[node name="near_crop" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="near_crop"]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_kqkgk")
+
+[node name="indicators" type="Node2D" parent="."]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="indicators"]
+texture_filter = 1
+position = Vector2(6, -5.96046e-08)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_durd0")
+
+[node name="Sprite2D2" type="Sprite2D" parent="indicators"]
+texture_filter = 1
+position = Vector2(-6, -5.96046e-08)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_o5yeg")
+
+[node name="Sprite2D3" type="Sprite2D" parent="indicators"]
+texture_filter = 1
+position = Vector2(6, 12)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("4_qxnwp")
+
+[node name="Sprite2D4" type="Sprite2D" parent="indicators"]
+texture_filter = 1
+position = Vector2(-6, 12)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_w3xjs")
+
+[connection signal="body_entered" from="near_crop" to="." method="_on_near_crop_body_entered"]
+[connection signal="body_exited" from="near_crop" to="." method="_on_near_crop_body_exited"]

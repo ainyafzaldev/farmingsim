@@ -1,0 +1,134 @@
+[gd_scene load_steps=16 format=3 uid="uid://34irflf248i2"]
+
+[ext_resource type="PackedScene" uid="uid://dag75uc2qvcmc" path="res://Scenes/Objects/crop.tscn" id="1_5v8eb"]
+[ext_resource type="Texture2D" uid="uid://c4t4p0g6u631p" path="res://Graphics/Elements/Crops/pumpkin_05.png" id="2_ke4p8"]
+[ext_resource type="Texture2D" uid="uid://d1pkhnqbh6c3g" path="res://Graphics/Elements/Crops/pumpkin_00.png" id="3_53hqp"]
+[ext_resource type="Texture2D" uid="uid://cxuimw5gljrbh" path="res://Graphics/Elements/Crops/pumpkin_01.png" id="4_w33ji"]
+[ext_resource type="Texture2D" uid="uid://bitqofv4u300v" path="res://Graphics/Elements/Crops/pumpkin_02.png" id="5_2g3rg"]
+[ext_resource type="Texture2D" uid="uid://cqi76yr0toa6j" path="res://Graphics/Elements/Crops/pumpkin_03.png" id="6_ohxb7"]
+[ext_resource type="Texture2D" uid="uid://doh5mgl4d4g1h" path="res://Graphics/Elements/Crops/pumpkin_04.png" id="7_ypcds"]
+
+[sub_resource type="Animation" id="Animation_lkv8t"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+
+[sub_resource type="Animation" id="Animation_rx7o8"]
+resource_name = "harvest"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_ke4p8")]
+}
+
+[sub_resource type="Animation" id="Animation_3v6cl"]
+resource_name = "seed"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_53hqp")]
+}
+
+[sub_resource type="Animation" id="Animation_q4b6u"]
+resource_name = "sprout"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_w33ji")]
+}
+
+[sub_resource type="Animation" id="Animation_iwys7"]
+resource_name = "seedling"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("5_2g3rg")]
+}
+
+[sub_resource type="Animation" id="Animation_jdtj2"]
+resource_name = "bud"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("6_ohxb7")]
+}
+
+[sub_resource type="Animation" id="Animation_qci42"]
+resource_name = "flower"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("plant:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_ypcds")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q4b6u"]
+_data = {
+&"RESET": SubResource("Animation_lkv8t"),
+&"harvest": SubResource("Animation_rx7o8"),
+&"seed": SubResource("Animation_3v6cl"),
+&"seedling1": SubResource("Animation_q4b6u"),
+&"seedling2": SubResource("Animation_iwys7"),
+&"seedling3": SubResource("Animation_jdtj2"),
+&"seedling4": SubResource("Animation_qci42")
+}
+
+[node name="crop" instance=ExtResource("1_5v8eb")]
+texture_filter = 1
+script = null
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+libraries = {
+&"": SubResource("AnimationLibrary_q4b6u")
+}

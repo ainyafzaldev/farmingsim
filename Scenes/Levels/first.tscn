@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfqfj3mtkgk65"]
+
+[ext_resource type="PackedScene" uid="uid://cfiwju5g6inha" path="res://Scenes/Levels/level.tscn" id="1_62p2e"]
+[ext_resource type="Script" uid="uid://3hiwusa0351f" path="res://Scenes/Levels/first.gd" id="2_g5tb7"]
+[ext_resource type="PackedScene" uid="uid://did6mydwk2md6" path="res://Scenes/Objects/tree.tscn" id="3_2kug8"]
+[ext_resource type="PackedScene" uid="uid://bbhwkl3j60uil" path="res://Scenes/Objects/sunflower.tscn" id="4_hhjl8"]
+
+[node name="firstLevel" instance=ExtResource("1_62p2e")]
+script = ExtResource("2_g5tb7")
+
+[node name="Tree" parent="trees" index="0" instance=ExtResource("3_2kug8")]
+position = Vector2(-132, -136)
+
+[node name="Tree2" parent="trees" index="1" instance=ExtResource("3_2kug8")]
+position = Vector2(-110, -68)
+
+[node name="sunflower" parent="crop" index="0" instance=ExtResource("4_hhjl8")]
+position = Vector2(-24, -96)
+
+[node name="sunflower2" parent="crop" index="1" instance=ExtResource("4_hhjl8")]
+position = Vector2(-8, -96)
+
+[node name="player" parent="." index="3"]
+z_index = 5

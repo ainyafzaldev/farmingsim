@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=4 uid="uid://did6mydwk2md6"]
+
+[ext_resource type="TileSet" uid="uid://bomgjqai131nw" path="res://Scenes/Assets/tileset32.tres" id="1_b0kcf"]
+[ext_resource type="Script" uid="uid://i4ed8ahv5gxy" path="res://Scenes/Objects/tree.gd" id="2_ebggc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ebggc"]
+radius = 14.0357
+
+[sub_resource type="Animation" id="Animation_okh6b"]
+resource_name = "tree"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c6qhw"]
+_data = {
+&"tree": SubResource("Animation_okh6b")
+}
+
+[node name="Tree" type="Node2D" groups=["Trees"]]
+texture_filter = 1
+script = ExtResource("2_ebggc")
+
+[node name="CutArea" type="Area2D" parent="." groups=["Trees"]]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CutArea"]
+position = Vector2(0, 8)
+shape = SubResource("CircleShape2D_ebggc")
+
+[node name="full_tree" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAD/////AQA3AAEAAAD//wAAAQA3AAgAAAD//wEAAQA3AAkAAAAAAP//AQA6AAEAAAAAAAAAAQA6AAgAAAAAAAEAAQA6AAkAAAA=")
+tile_set = ExtResource("1_b0kcf")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_c6qhw")
+}
+
+[node name="tree_top" type="TileMapLayer" parent="."]
+visible = false
+z_index = 10
+tile_map_data = PackedByteArray("AAD/////AQA3AAEAAAAAAP//AQA6AAEAAAA=")
+tile_set = ExtResource("1_b0kcf")
+
+[connection signal="body_entered" from="CutArea" to="." method="_on_cut_area_body_entered"]
+[connection signal="body_exited" from="CutArea" to="." method="_on_cut_area_body_exited"]
