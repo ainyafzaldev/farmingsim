@@ -26,10 +26,9 @@ func perform_action():
 		queue_free()
 		
 
-
-func _on_cut_area_body_entered(body: Node2D) -> void:
+func _on_cut_area_area_entered(area: Area2D) -> void:
 	player_near.emit(self)
 
 
-func _on_cut_area_body_exited(body: Node2D) -> void:
+func _on_cut_area_area_exited(area: Area2D) -> void:
 	player_not_near.emit(self)

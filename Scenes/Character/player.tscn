@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=3 uid="uid://cbvi42f4ocb4c"]
+[gd_scene load_steps=47 format=3 uid="uid://cbvi42f4ocb4c"]
 
 [ext_resource type="Texture2D" uid="uid://bu2qehonerk06" path="res://Graphics/Characters/Human/WALKING/base_walk_strip8.png" id="1_bk5kl"]
 [ext_resource type="Texture2D" uid="uid://cl1ktw47vw8jt" path="res://Graphics/Characters/Human/IDLE/longhair_idle_strip9.png" id="1_l0tos"]
@@ -30,7 +30,10 @@
 [ext_resource type="Texture2D" uid="uid://d3f6drjbwiun2" path="res://Graphics/Characters/Human/DOING/tools_doing_strip8.png" id="15_4jgyf"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bk5kl"]
-size = Vector2(6.29129, 2.57371)
+size = Vector2(3.20856, 1.60428)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sfmyh"]
+size = Vector2(0.0467917, 1.06952)
 
 [sub_resource type="Animation" id="Animation_ggc2y"]
 length = 0.001
@@ -1302,28 +1305,45 @@ _data = {
 }
 
 [node name="player" type="CharacterBody2D"]
+y_sort_enabled = true
 collision_mask = 30
 script = ExtResource("1_sfmyh")
 
 [node name="PlayerCollision" type="CollisionShape2D" parent="."]
-position = Vector2(2.54993e-07, 4.54545)
+position = Vector2(-5.96046e-08, 0.5)
 scale = Vector2(1.87, 1.87)
 shape = SubResource("RectangleShape2D_bk5kl")
 
+[node name="detect hover" type="Area2D" parent="."]
+position = Vector2(0, 1)
+scale = Vector2(1.87, 1.87)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detect hover"]
+shape = SubResource("RectangleShape2D_sfmyh")
+
 [node name="Body" type="Sprite2D" parent="."]
+y_sort_enabled = true
 texture_filter = 1
+position = Vector2(0, -5)
 texture = ExtResource("7_yg3nc")
 hframes = 10
+metadata/_edit_lock_ = true
 
 [node name="Hair" type="Sprite2D" parent="."]
+y_sort_enabled = true
 texture_filter = 1
+position = Vector2(0, -5)
 texture = ExtResource("8_17ttd")
 hframes = 10
+metadata/_edit_lock_ = true
 
 [node name="Tool" type="Sprite2D" parent="."]
+y_sort_enabled = true
 texture_filter = 1
+position = Vector2(0, -5)
 texture = ExtResource("9_s7hvb")
 hframes = 10
+metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)

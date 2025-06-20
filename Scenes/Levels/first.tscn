@@ -8,17 +8,14 @@
 [node name="firstLevel" instance=ExtResource("1_62p2e")]
 script = ExtResource("2_g5tb7")
 
-[node name="Tree" parent="trees" index="0" instance=ExtResource("3_2kug8")]
+[node name="Tree" parent="ysorted/trees" index="0" instance=ExtResource("3_2kug8")]
 position = Vector2(-132, -136)
 
-[node name="Tree2" parent="trees" index="1" instance=ExtResource("3_2kug8")]
+[node name="Tree2" parent="ysorted/trees" index="1" instance=ExtResource("3_2kug8")]
 position = Vector2(-110, -68)
 
-[node name="sunflower" parent="crop" index="0" instance=ExtResource("4_hhjl8")]
-position = Vector2(-24, -96)
-
-[node name="sunflower2" parent="crop" index="1" instance=ExtResource("4_hhjl8")]
+[node name="sunflower2" parent="ysorted/crop" index="0" instance=ExtResource("4_hhjl8")]
 position = Vector2(-8, -96)
 
-[node name="player" parent="." index="3"]
-z_index = 5
+[node name="sunflower" parent="ysorted/crop" index="1" instance=ExtResource("4_hhjl8")]
+position = Vector2(-24, -96)

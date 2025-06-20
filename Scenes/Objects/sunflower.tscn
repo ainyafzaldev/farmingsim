@@ -126,6 +126,7 @@ _data = {
 }
 
 [node name="sunflower" instance=ExtResource("1_0aeib")]
+y_sort_enabled = true
 texture_filter = 1
 script = ExtResource("2_gobe6")
 

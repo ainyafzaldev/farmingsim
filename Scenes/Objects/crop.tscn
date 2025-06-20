@@ -49,5 +49,5 @@ position = Vector2(-6, 12)
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("5_w3xjs")
 
-[connection signal="body_entered" from="near_crop" to="." method="_on_near_crop_body_entered"]
-[connection signal="body_exited" from="near_crop" to="." method="_on_near_crop_body_exited"]
+[connection signal="area_entered" from="near_crop" to="." method="_on_near_crop_area_entered"]
+[connection signal="area_exited" from="near_crop" to="." method="_on_near_crop_area_exited"]

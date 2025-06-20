@@ -29,12 +29,12 @@ func show_indicators():
 	$indicators.visible = true
 func hide_indicators():
 	$indicators.visible = false
-	
-func _on_near_crop_body_entered(body: Node2D) -> void:
-	
+
+
+func _on_near_crop_area_entered(area: Area2D) -> void:
 	player_near.emit(self)
 
 
-func _on_near_crop_body_exited(body: Node2D) -> void:
-	
+func _on_near_crop_area_exited(area: Area2D) -> void:
 	player_not_near.emit(self)
+	

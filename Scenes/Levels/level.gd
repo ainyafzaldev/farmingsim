@@ -7,13 +7,13 @@ var near_obj = null
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	print("hi")
-	for tree in $trees.get_children():
+	for tree in $ysorted/trees.get_children():
 		# from tree
 		tree.connect("player_near", _on_player_near_tree)
 		tree.connect("player_not_near", _on_player_not_near_tree)
 		# from player
 		#tree.connect("player_performed_action", _on_player_player_performed_action)
-	for crop in $crop.get_children():
+	for crop in $ysorted/crop.get_children():
 		crop.connect("player_near", _on_player_near_crop)
 		crop.connect("player_not_near", _on_player_not_near_crop)
 
