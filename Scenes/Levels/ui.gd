@@ -50,5 +50,7 @@ func update_tool_slector():
 	if selected_tool == 2:
 		%shovelSelector.visible = true
 		Globals.active_tool == Globals.shovel
-		
-		
+func stat_change() -> void:
+	update_wood_count()
+func update_wood_count():
+	woodCountLabel.text = str(Globals.inventory["wood"])

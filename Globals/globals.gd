@@ -13,11 +13,12 @@ const roll:String = "roll"
 const action:String = "action"
 const busy:String = "busy"
 
+
 var action_speed:int = 0
 var walking_speed:int = 40
 var running_speed:int = 70
 
-var active_tool:String = wateringCan
+var active_tool:String = axe
 
 var movement_type: String = idle
 

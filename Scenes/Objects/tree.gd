@@ -2,7 +2,10 @@ extends Node2D
 signal player_near(tree)
 signal player_not_near(tree)
 
-var hit_count = 3
+signal chopped(pos, direction)
+
+@onready var current_direction: Vector2 = Vector2.RIGHT.rotated(rotation) # down because it is the default direction of the items
+var hit_count = 1
 
 
 # Called when the node enters the scene tree for the first time.
@@ -23,6 +26,7 @@ func perform_action():
 	hit_count -= 1
 	
 	if hit_count == 0:
+		chopped.emit($Node2D/spawnPoint.global_position, current_direction)
 		queue_free()
 		
 

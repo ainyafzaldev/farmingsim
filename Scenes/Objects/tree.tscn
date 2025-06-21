@@ -21,16 +21,24 @@ script = ExtResource("2_ebggc")
 
 [node name="CutArea" type="Area2D" parent="." groups=["Trees"]]
 position = Vector2(0, -8)
+metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CutArea"]
 position = Vector2(0, 7.5)
 shape = SubResource("RectangleShape2D_ebggc")
+metadata/_edit_lock_ = true
 
 [node name="full_tree" type="TileMapLayer" parent="."]
 y_sort_enabled = true
 position = Vector2(0, -9)
 tile_map_data = PackedByteArray("AAD/////AQA3AAEAAAD//wAAAQA3AAgAAAD//wEAAQA3AAkAAAAAAP//AQA6AAEAAAAAAAAAAQA6AAgAAAAAAAEAAQA6AAkAAAA=")
 tile_set = ExtResource("1_b0kcf")
+metadata/_edit_lock_ = true
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="spawnPoint" type="Marker2D" parent="Node2D"]
+position = Vector2(0, -2)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

@@ -26,4 +26,6 @@ position = Vector2(-148, -69)
 
 [node name="UI" parent="." instance=ExtResource("4_lkqqh")]
 
+[node name="items" type="Node2D" parent="."]
+
 [connection signal="player_performed_action" from="ysorted/player" to="." method="_on_player_player_performed_action"]
