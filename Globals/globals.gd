@@ -24,3 +24,5 @@ var movement_type: String = idle
 # if active_tool matches what player is near
 var can_do_action: bool = false
 var is_doing_action: bool = false
+
+var inventory = {"wood": 0, "sunflower": 0, "pumpkin": 0}

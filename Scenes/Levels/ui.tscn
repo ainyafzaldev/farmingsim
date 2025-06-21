@@ -1,0 +1,207 @@
+[gd_scene load_steps=13 format=3 uid="uid://vl43nmp7kjx7"]
+
+[ext_resource type="Script" uid="uid://caaxe4m87x4rg" path="res://Scenes/Levels/ui.gd" id="1_huoym"]
+[ext_resource type="Texture2D" uid="uid://cgxf4euyh8ii6" path="res://Graphics/Elements/Crops/wood.png" id="1_xwq20"]
+[ext_resource type="Texture2D" uid="uid://co5cw52uf8dbk" path="res://Graphics/Elements/Crops/sunflower_05.png" id="2_4r020"]
+[ext_resource type="Texture2D" uid="uid://cdal26pdxxlef" path="res://Graphics/UI/axe.png" id="3_a2vap"]
+[ext_resource type="Texture2D" uid="uid://d3wyphv7nicmq" path="res://Graphics/UI/selectbox_bl.png" id="4_f7omg"]
+[ext_resource type="Texture2D" uid="uid://cgd6ocfdpmnd6" path="res://Graphics/UI/selectbox_tl.png" id="4_u7ps2"]
+[ext_resource type="Texture2D" uid="uid://chx1s1dd7vqcf" path="res://Graphics/UI/selectbox_tr.png" id="5_teh6u"]
+[ext_resource type="Texture2D" uid="uid://dtg366ufa3i7q" path="res://Graphics/UI/selectbox_br.png" id="6_l7l08"]
+[ext_resource type="Texture2D" uid="uid://drubrsbwq0r88" path="res://Graphics/UI/water.png" id="8_l7l08"]
+[ext_resource type="Texture2D" uid="uid://bw3mjh7mdbafn" path="res://Graphics/UI/shovel.png" id="8_teh6u"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4r020"]
+font_size = 32
+
+[sub_resource type="Theme" id="Theme_a2vap"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_huoym")
+
+[node name="wood" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = -37.0
+offset_right = 10.0
+offset_bottom = -30.0
+grow_vertical = 0
+
+[node name="texture" type="TextureRect" parent="wood"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("1_xwq20")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="label" type="Label" parent="wood"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_4r020")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="sunflower" type="VBoxContainer" parent="."]
+anchors_preset = -1
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 70.0
+offset_top = -37.0
+offset_right = 10.0
+offset_bottom = -30.0
+grow_vertical = 0
+
+[node name="texture" type="TextureRect" parent="sunflower"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("2_4r020")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="label" type="Label" parent="sunflower"]
+layout_mode = 2
+text = "0"
+label_settings = SubResource("LabelSettings_4r020")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="tools" type="VBoxContainer" parent="."]
+texture_filter = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -70.0
+offset_right = -30.0
+offset_bottom = -30.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(0, 0.31)
+theme = SubResource("Theme_a2vap")
+theme_override_constants/separation = 20
+
+[node name="axe" type="TextureRect" parent="tools"]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_a2vap")
+expand_mode = 5
+
+[node name="axeSelector" type="Control" parent="tools/axe"]
+unique_name_in_owner = true
+layout_mode = 2
+anchors_preset = 0
+offset_right = 40.0
+
+[node name="TextureRect9" type="TextureRect" parent="tools/axe/axeSelector"]
+texture_filter = 1
+offset_left = -17.0
+offset_top = -14.0
+offset_bottom = 4.0
+texture = ExtResource("4_u7ps2")
+
+[node name="TextureRect10" type="TextureRect" parent="tools/axe/axeSelector"]
+texture_filter = 1
+offset_left = 41.0
+offset_top = -15.0
+offset_right = 58.0
+offset_bottom = 3.0
+texture = ExtResource("5_teh6u")
+
+[node name="TextureRect11" type="TextureRect" parent="tools/axe/axeSelector"]
+texture_filter = 1
+offset_left = 41.0
+offset_top = 39.0
+offset_right = 58.0
+offset_bottom = 57.0
+texture = ExtResource("6_l7l08")
+
+[node name="TextureRect12" type="TextureRect" parent="tools/axe/axeSelector"]
+texture_filter = 1
+offset_left = -17.0
+offset_top = 39.0
+offset_bottom = 57.0
+texture = ExtResource("4_f7omg")
+
+[node name="wateringcan" type="TextureRect" parent="tools"]
+layout_mode = 2
+texture = ExtResource("8_l7l08")
+expand_mode = 5
+
+[node name="wateringCanSelector" type="Control" parent="tools/wateringcan"]
+unique_name_in_owner = true
+layout_mode = 2
+anchors_preset = 0
+offset_right = 40.0
+
+[node name="TextureRect9" type="TextureRect" parent="tools/wateringcan/wateringCanSelector"]
+texture_filter = 1
+offset_left = -17.0
+offset_top = -14.0
+offset_bottom = 4.0
+texture = ExtResource("4_u7ps2")
+
+[node name="TextureRect10" type="TextureRect" parent="tools/wateringcan/wateringCanSelector"]
+texture_filter = 1
+offset_left = 41.0
+offset_top = -15.0
+offset_right = 58.0
+offset_bottom = 3.0
+texture = ExtResource("5_teh6u")
+
+[node name="TextureRect11" type="TextureRect" parent="tools/wateringcan/wateringCanSelector"]
+texture_filter = 1
+offset_left = 41.0
+offset_top = 39.0
+offset_right = 58.0
+offset_bottom = 57.0
+texture = ExtResource("6_l7l08")
+
+[node name="TextureRect12" type="TextureRect" parent="tools/wateringcan/wateringCanSelector"]
+texture_filter = 1
+offset_left = -17.0
+offset_top = 39.0
+offset_bottom = 57.0
+texture = ExtResource("4_f7omg")
+
+[node name="shovel" type="TextureRect" parent="tools"]
+layout_mode = 2
+texture = ExtResource("8_teh6u")
+expand_mode = 5
+
+[node name="shovelSelector" type="Control" parent="tools/shovel"]
+unique_name_in_owner = true
+anchors_preset = 0
+
+[node name="TextureRect9" type="TextureRect" parent="tools/shovel/shovelSelector"]
+texture_filter = 1
+offset_left = -17.0
+offset_top = -14.0
+offset_bottom = 4.0
+texture = ExtResource("4_u7ps2")
+
+[node name="TextureRect10" type="TextureRect" parent="tools/shovel/shovelSelector"]
+texture_filter = 1
+offset_left = 41.0
+offset_top = -15.0
+offset_right = 58.0
+offset_bottom = 3.0
+texture = ExtResource("5_teh6u")
+
+[node name="TextureRect11" type="TextureRect" parent="tools/shovel/shovelSelector"]
+texture_filter = 1
+offset_left = 41.0
+offset_top = 39.0
+offset_right = 58.0
+offset_bottom = 57.0
+texture = ExtResource("6_l7l08")
+
+[node name="TextureRect12" type="TextureRect" parent="tools/shovel/shovelSelector"]
+texture_filter = 1
+offset_left = -17.0
+offset_top = 39.0
+offset_bottom = 57.0
+texture = ExtResource("4_f7omg")
