@@ -1,0 +1,154 @@
+[gd_scene load_steps=17 format=3 uid="uid://c50f6bdqp4518"]
+
+[ext_resource type="Texture2D" uid="uid://58jd7q27raho" path="res://Graphics/Elements/Crops/soil_00.png" id="1_ntvac"]
+[ext_resource type="Script" uid="uid://dgqgqhm55mmwp" path="res://Scenes/Objects/soil.gd" id="1_yhjsh"]
+[ext_resource type="Texture2D" uid="uid://bvmk3xrhvlkns" path="res://Graphics/Elements/Crops/soil_01.png" id="2_806gg"]
+[ext_resource type="Texture2D" uid="uid://gdtkgr1qcu86" path="res://Graphics/Elements/Crops/soil_03.png" id="3_wlar0"]
+[ext_resource type="Texture2D" uid="uid://6rjbqgemihhi" path="res://Graphics/Elements/Crops/soil_04.png" id="4_yhjsh"]
+[ext_resource type="Texture2D" uid="uid://chx1s1dd7vqcf" path="res://Graphics/UI/selectbox_tr.png" id="6_5ej1i"]
+[ext_resource type="Texture2D" uid="uid://cgd6ocfdpmnd6" path="res://Graphics/UI/selectbox_tl.png" id="7_4syo6"]
+[ext_resource type="Texture2D" uid="uid://dtg366ufa3i7q" path="res://Graphics/UI/selectbox_br.png" id="8_cwhku"]
+[ext_resource type="Texture2D" uid="uid://d3wyphv7nicmq" path="res://Graphics/UI/selectbox_bl.png" id="9_buk00"]
+
+[sub_resource type="Animation" id="Animation_uo5sn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("soilSprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_ntvac")]
+}
+
+[sub_resource type="Animation" id="Animation_suaaa"]
+resource_name = "soil3"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("soilSprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_yhjsh")]
+}
+
+[sub_resource type="Animation" id="Animation_806gg"]
+resource_name = "soil0"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("soilSprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_ntvac")]
+}
+
+[sub_resource type="Animation" id="Animation_jm45a"]
+resource_name = "soil2"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("soilSprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_wlar0")]
+}
+
+[sub_resource type="Animation" id="Animation_wlar0"]
+resource_name = "soil1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("soilSprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_806gg")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wlar0"]
+_data = {
+&"RESET": SubResource("Animation_uo5sn"),
+&"soilBigHole": SubResource("Animation_suaaa"),
+&"soilDry": SubResource("Animation_806gg"),
+&"soilSmallHole": SubResource("Animation_jm45a"),
+&"soilWet": SubResource("Animation_wlar0")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5ej1i"]
+size = Vector2(16, 16)
+
+[node name="soil" type="Node2D"]
+y_sort_enabled = true
+texture_filter = 1
+script = ExtResource("1_yhjsh")
+
+[node name="soilSprite" type="Sprite2D" parent="."]
+z_index = -10
+texture = ExtResource("1_ntvac")
+
+[node name="soilAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_wlar0")
+}
+
+[node name="indicators" type="Node2D" parent="."]
+visible = false
+position = Vector2(0, -5.98)
+
+[node name="Sprite2D" type="Sprite2D" parent="indicators"]
+texture_filter = 1
+position = Vector2(6, -5.96046e-08)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("6_5ej1i")
+
+[node name="Sprite2D2" type="Sprite2D" parent="indicators"]
+texture_filter = 1
+position = Vector2(-6, -5.96046e-08)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("7_4syo6")
+
+[node name="Sprite2D3" type="Sprite2D" parent="indicators"]
+texture_filter = 1
+position = Vector2(6, 12)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("8_cwhku")
+
+[node name="Sprite2D4" type="Sprite2D" parent="indicators"]
+texture_filter = 1
+position = Vector2(-6, 12)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("9_buk00")
+
+[node name="near_soil" type="Area2D" parent="."]
+z_index = -10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="near_soil"]
+shape = SubResource("RectangleShape2D_5ej1i")
+
+[node name="growPoint" type="Marker2D" parent="."]
+
+[node name="plant" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[connection signal="area_entered" from="near_soil" to="." method="_on_near_soil_area_entered"]
+[connection signal="area_exited" from="near_soil" to="." method="_on_near_soil_area_exited"]

@@ -12,6 +12,12 @@ script = ExtResource("1_7x7pb")
 z_index = -10
 metadata/_edit_lock_ = true
 
+[node name="environment" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="soil" type="Node2D" parent="environment"]
+y_sort_enabled = true
+
 [node name="ysorted" type="Node2D" parent="."]
 y_sort_enabled = true
 
@@ -28,4 +34,9 @@ position = Vector2(-148, -69)
 
 [node name="items" type="Node2D" parent="."]
 
+[node name="HourTimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
 [connection signal="player_performed_action" from="ysorted/player" to="." method="_on_player_player_performed_action"]
+[connection signal="timeout" from="HourTimer" to="." method="_on_hour_timer_timeout"]

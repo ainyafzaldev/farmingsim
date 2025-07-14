@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="farmingsim"
-run/main_scene="uid://bfqfj3mtkgk65"
+run/main_scene="uid://cr43c10ug6reh"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

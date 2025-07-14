@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://vl43nmp7kjx7"]
+[gd_scene load_steps=43 format=3 uid="uid://vl43nmp7kjx7"]
 
 [ext_resource type="Script" uid="uid://caaxe4m87x4rg" path="res://Scenes/Levels/ui.gd" id="1_huoym"]
 [ext_resource type="Texture2D" uid="uid://cgxf4euyh8ii6" path="res://Graphics/Elements/Crops/wood.png" id="1_xwq20"]
@@ -10,198 +10,5915 @@
 [ext_resource type="Texture2D" uid="uid://dtg366ufa3i7q" path="res://Graphics/UI/selectbox_br.png" id="6_l7l08"]
 [ext_resource type="Texture2D" uid="uid://drubrsbwq0r88" path="res://Graphics/UI/water.png" id="8_l7l08"]
 [ext_resource type="Texture2D" uid="uid://bw3mjh7mdbafn" path="res://Graphics/UI/shovel.png" id="8_teh6u"]
+[ext_resource type="Texture2D" uid="uid://cylnag5f47jgp" path="res://Graphics/Elements/Crops/sunflower_00.png" id="11_74pwq"]
+[ext_resource type="Texture2D" uid="uid://d3u3bylo2ymey" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_tc.png" id="12_cbh32"]
+[ext_resource type="Texture2D" uid="uid://coixd61m2c7ft" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_c.png" id="12_ngjdw"]
+[ext_resource type="Texture2D" uid="uid://dg4oykglu3ky3" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_tl.png" id="13_7fo3c"]
+[ext_resource type="Texture2D" uid="uid://b1isnbotmkc8v" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_bc.png" id="13_r8coh"]
+[ext_resource type="Texture2D" uid="uid://c3mnssbec4fy3" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_c.png" id="14_3el6m"]
+[ext_resource type="Texture2D" uid="uid://dvsn5cymuxl6y" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_br.png" id="14_lex1b"]
+[ext_resource type="Texture2D" uid="uid://dl80emykhan15" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_bl.png" id="15_3lgjx"]
+[ext_resource type="Texture2D" uid="uid://cg2bbf43wdgrg" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_lc.png" id="15_tu847"]
+[ext_resource type="Texture2D" uid="uid://dg8nkl1ky1iaq" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_tr.png" id="15_wor58"]
+[ext_resource type="Texture2D" uid="uid://dhy2dcty4qbc" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_rc.png" id="16_kmlas"]
+[ext_resource type="Texture2D" uid="uid://d4k6eounb6qip" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_lc.png" id="16_lo3qk"]
+[ext_resource type="Texture2D" uid="uid://brbk7wohxtbus" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_bl.png" id="16_wor58"]
+[ext_resource type="Texture2D" uid="uid://bq45bcfjgfrch" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_tl.png" id="17_f8ocv"]
+[ext_resource type="Texture2D" uid="uid://dxkk2xco243ig" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_br.png" id="17_ie3uy"]
+[ext_resource type="Texture2D" uid="uid://n81y34klok6c" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_tc.png" id="18_cbh32"]
+[ext_resource type="Texture2D" uid="uid://tiagsiqrsdih" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_tr.png" id="19_7fo3c"]
+[ext_resource type="Texture2D" uid="uid://dxkqjqwe4q7o3" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_rc.png" id="20_3el6m"]
+[ext_resource type="Texture2D" uid="uid://dq07kx4c6vtyw" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_bc.png" id="21_r8coh"]
+[ext_resource type="Texture2D" uid="uid://b80j2i2uf8e7b" path="res://Graphics/UI/9slice_box_white/w_box_9slice_bc.png" id="30_wor58"]
+[ext_resource type="Texture2D" uid="uid://dmwui1288i1mu" path="res://Graphics/UI/9slice_box_white/w_box_9slice_br.png" id="31_gtlyn"]
+[ext_resource type="Texture2D" uid="uid://c2yra0bu2u6kk" path="res://Graphics/UI/9slice_box_white/w_box_9slice_rc.png" id="32_sf573"]
+[ext_resource type="Texture2D" uid="uid://dpbiqtwlv38w4" path="res://Graphics/UI/9slice_box_white/w_box_9slice_tr.png" id="33_1rvb0"]
+[ext_resource type="Texture2D" uid="uid://8cymjtlwwlh2" path="res://Graphics/UI/9slice_box_white/w_box_9slice_tc.png" id="34_unq0k"]
+[ext_resource type="Texture2D" uid="uid://ceshb1bchs32u" path="res://Graphics/UI/9slice_box_white/w_box_9slice_tl.png" id="35_ef7a5"]
+[ext_resource type="Texture2D" uid="uid://bqklo3arbqkyh" path="res://Graphics/UI/9slice_box_white/w_box_9slice_lc.png" id="36_7v5uf"]
+[ext_resource type="Texture2D" uid="uid://bdquqldicagar" path="res://Graphics/UI/9slice_box_white/w_box_9slice_bl.png" id="37_run8i"]
+[ext_resource type="Texture2D" uid="uid://torui8plnqd0" path="res://Graphics/UI/9slice_box_white/w_box_9slice_c.png" id="38_k32as"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4r020"]
 font_size = 32
 
-[sub_resource type="Theme" id="Theme_a2vap"]
+[sub_resource type="Theme" id="Theme_ngjdw"]
+
+[sub_resource type="SystemFont" id="SystemFont_gtlyn"]
+subpixel_positioning = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_gtlyn"]
+font = SubResource("SystemFont_gtlyn")
+font_size = 10
+shadow_size = 0
 
 [node name="UI" type="CanvasLayer"]
 script = ExtResource("1_huoym")
 
-[node name="wood" type="VBoxContainer" parent="."]
-anchors_preset = -1
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 30.0
-offset_top = -37.0
-offset_right = 10.0
-offset_bottom = -30.0
-grow_vertical = 0
+[node name="timeDisplay" type="HBoxContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
 
-[node name="texture" type="TextureRect" parent="wood"]
-texture_filter = 1
+[node name="dayText" type="Label" parent="timeDisplay"]
 layout_mode = 2
-texture = ExtResource("1_xwq20")
-expand_mode = 5
-stretch_mode = 5
-
-[node name="label" type="Label" parent="wood"]
-layout_mode = 2
-text = "0"
+text = "Day: "
 label_settings = SubResource("LabelSettings_4r020")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="sunflower" type="VBoxContainer" parent="."]
-anchors_preset = -1
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 70.0
-offset_top = -37.0
-offset_right = 10.0
-offset_bottom = -30.0
-grow_vertical = 0
-
-[node name="texture" type="TextureRect" parent="sunflower"]
-texture_filter = 1
+[node name="dayCount" type="Label" parent="timeDisplay"]
 layout_mode = 2
-texture = ExtResource("2_4r020")
-expand_mode = 5
-stretch_mode = 5
-
-[node name="label" type="Label" parent="sunflower"]
-layout_mode = 2
-text = "0"
+text = "1"
 label_settings = SubResource("LabelSettings_4r020")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="tools" type="VBoxContainer" parent="."]
-texture_filter = 1
-anchors_preset = -1
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -70.0
-offset_top = -70.0
-offset_right = -30.0
-offset_bottom = -30.0
-grow_horizontal = 0
-grow_vertical = 0
-pivot_offset = Vector2(0, 0.31)
-theme = SubResource("Theme_a2vap")
-theme_override_constants/separation = 20
+[node name="space" type="Label" parent="timeDisplay"]
+layout_mode = 2
+text = " "
+label_settings = SubResource("LabelSettings_4r020")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="axe" type="TextureRect" parent="tools"]
+[node name="hourCount" type="Label" parent="timeDisplay"]
+layout_mode = 2
+text = "10 am"
+label_settings = SubResource("LabelSettings_4r020")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ToolboxContainer" type="Control" parent="."]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_top = -100.0
+offset_right = -480.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="left7" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_7fo3c")
+
+[node name="left6" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 3.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_tu847")
+
+[node name="left5" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_top = 24.0
+offset_right = 3.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_tu847")
+
+[node name="left4" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 3.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_tu847")
+
+[node name="left3" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_top = 48.0
+offset_right = 3.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_tu847")
+
+[node name="left2" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_top = 60.0
+offset_right = 3.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_tu847")
+
+[node name="left" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_top = 72.0
+offset_right = 3.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_wor58")
+
+[node name="left8" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 525.0
+offset_right = 528.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_wor58")
+
+[node name="left9" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 12.0
+offset_right = 528.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_kmlas")
+
+[node name="left10" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 24.0
+offset_right = 528.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_kmlas")
+
+[node name="left11" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 36.0
+offset_right = 528.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_kmlas")
+
+[node name="left12" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 48.0
+offset_right = 528.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_kmlas")
+
+[node name="left13" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 60.0
+offset_right = 528.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_kmlas")
+
+[node name="left14" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 525.0
+offset_top = 72.0
+offset_right = 528.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("17_ie3uy")
+
+[node name="DtBox9SliceTc23" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 15.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc24" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 12.0
+offset_right = 27.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc25" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 12.0
+offset_right = 39.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc26" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 12.0
+offset_right = 51.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc27" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 12.0
+offset_right = 63.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc28" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 12.0
+offset_right = 75.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc29" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 24.0
+offset_right = 15.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc30" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 27.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc31" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 24.0
+offset_right = 39.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc32" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 24.0
+offset_right = 51.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc33" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 24.0
+offset_right = 63.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc34" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 24.0
+offset_right = 75.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc35" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 36.0
+offset_right = 15.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc36" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 36.0
+offset_right = 27.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc37" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 36.0
+offset_right = 39.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc38" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 36.0
+offset_right = 51.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc39" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 36.0
+offset_right = 63.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc40" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 36.0
+offset_right = 75.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc41" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 48.0
+offset_right = 15.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc42" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 48.0
+offset_right = 27.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc43" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 48.0
+offset_right = 39.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc44" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 48.0
+offset_right = 51.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc45" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 48.0
+offset_right = 63.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc46" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 48.0
+offset_right = 75.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc47" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 60.0
+offset_right = 15.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc48" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 60.0
+offset_right = 27.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc49" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 60.0
+offset_right = 39.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc50" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 60.0
+offset_right = 51.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc51" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 60.0
+offset_right = 63.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc52" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 60.0
+offset_right = 75.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="bottom" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 72.0
+offset_right = 15.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom2" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 72.0
+offset_right = 27.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom3" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 72.0
+offset_right = 39.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom4" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 72.0
+offset_right = 51.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom5" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 72.0
+offset_right = 63.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom6" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 72.0
+offset_right = 75.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="top" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 60.0
+offset_right = 63.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top2" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 48.0
+offset_right = 51.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top3" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 36.0
+offset_right = 39.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top4" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 24.0
+offset_right = 27.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top6" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 15.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top5" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 72.0
+offset_right = 75.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="DtBox9SliceTc53" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 12.0
+offset_right = 87.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc54" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 12.0
+offset_right = 99.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc55" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 12.0
+offset_right = 111.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc56" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 12.0
+offset_right = 123.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc57" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 12.0
+offset_right = 135.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc58" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 12.0
+offset_right = 147.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc59" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 24.0
+offset_right = 87.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc60" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 24.0
+offset_right = 99.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc61" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 24.0
+offset_right = 111.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc62" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 24.0
+offset_right = 123.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc63" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 24.0
+offset_right = 135.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc64" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 24.0
+offset_right = 147.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc65" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 36.0
+offset_right = 87.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc66" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 36.0
+offset_right = 99.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc67" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 36.0
+offset_right = 111.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc68" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 36.0
+offset_right = 123.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc69" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 36.0
+offset_right = 135.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc70" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 36.0
+offset_right = 147.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc71" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 48.0
+offset_right = 87.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc72" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 48.0
+offset_right = 99.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc73" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 48.0
+offset_right = 111.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc74" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 48.0
+offset_right = 123.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc75" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 48.0
+offset_right = 135.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc76" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 48.0
+offset_right = 147.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc77" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 60.0
+offset_right = 87.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc78" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 60.0
+offset_right = 99.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc79" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 60.0
+offset_right = 111.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc80" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 60.0
+offset_right = 123.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc81" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 60.0
+offset_right = 135.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc82" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 60.0
+offset_right = 147.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="bottom7" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 84.0
+offset_top = 72.0
+offset_right = 87.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom8" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 72.0
+offset_right = 99.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom9" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 108.0
+offset_top = 72.0
+offset_right = 111.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom10" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 72.0
+offset_right = 123.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom11" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 132.0
+offset_top = 72.0
+offset_right = 135.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom12" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 144.0
+offset_top = 72.0
+offset_right = 147.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="top7" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 132.0
+offset_right = 135.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top8" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 120.0
+offset_right = 123.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top9" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 108.0
+offset_right = 111.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top10" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 96.0
+offset_right = 99.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top11" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 84.0
+offset_right = 87.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top12" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 144.0
+offset_right = 147.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="DtBox9SliceTc83" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 12.0
+offset_right = 159.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc84" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 12.0
+offset_right = 171.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc85" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 12.0
+offset_right = 183.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc86" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 12.0
+offset_right = 195.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc87" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 12.0
+offset_right = 207.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc88" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 12.0
+offset_right = 219.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc89" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 24.0
+offset_right = 159.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc90" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 24.0
+offset_right = 171.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc91" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 24.0
+offset_right = 183.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc92" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 24.0
+offset_right = 195.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc93" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 24.0
+offset_right = 207.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc94" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 24.0
+offset_right = 219.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc95" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 36.0
+offset_right = 159.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc96" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 36.0
+offset_right = 171.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc97" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 36.0
+offset_right = 183.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc98" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 36.0
+offset_right = 195.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc99" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 36.0
+offset_right = 207.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc100" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 36.0
+offset_right = 219.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc101" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 48.0
+offset_right = 159.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc102" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 48.0
+offset_right = 171.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc103" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 48.0
+offset_right = 183.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc104" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 48.0
+offset_right = 195.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc105" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 48.0
+offset_right = 207.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc106" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 48.0
+offset_right = 219.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc107" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 60.0
+offset_right = 159.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc108" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 60.0
+offset_right = 171.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc109" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 60.0
+offset_right = 183.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc110" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 60.0
+offset_right = 195.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc111" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 60.0
+offset_right = 207.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc112" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 60.0
+offset_right = 219.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="bottom13" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 156.0
+offset_top = 72.0
+offset_right = 159.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom14" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 72.0
+offset_right = 171.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom15" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 180.0
+offset_top = 72.0
+offset_right = 183.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom16" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 72.0
+offset_right = 195.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom17" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 72.0
+offset_right = 207.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom18" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 72.0
+offset_right = 219.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="top13" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 204.0
+offset_right = 207.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top14" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 192.0
+offset_right = 195.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top15" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 180.0
+offset_right = 183.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top16" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 168.0
+offset_right = 171.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top17" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 156.0
+offset_right = 159.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top18" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 216.0
+offset_right = 219.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="DtBox9SliceTc113" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 12.0
+offset_right = 231.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc114" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 12.0
+offset_right = 243.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc115" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 12.0
+offset_right = 255.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc116" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 12.0
+offset_right = 267.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc117" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 12.0
+offset_right = 279.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc118" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 12.0
+offset_right = 291.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc119" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 24.0
+offset_right = 231.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc120" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 24.0
+offset_right = 243.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc121" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 24.0
+offset_right = 255.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc122" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 24.0
+offset_right = 267.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc123" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 24.0
+offset_right = 279.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc124" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 24.0
+offset_right = 291.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc125" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 36.0
+offset_right = 231.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc126" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 36.0
+offset_right = 243.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc127" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 36.0
+offset_right = 255.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc128" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 36.0
+offset_right = 267.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc129" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 36.0
+offset_right = 279.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc130" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 36.0
+offset_right = 291.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc131" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 48.0
+offset_right = 231.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc132" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 48.0
+offset_right = 243.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc133" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 48.0
+offset_right = 255.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc134" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 48.0
+offset_right = 267.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc135" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 48.0
+offset_right = 279.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc136" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 48.0
+offset_right = 291.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc137" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 60.0
+offset_right = 231.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc138" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 60.0
+offset_right = 243.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc139" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 60.0
+offset_right = 255.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc140" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 60.0
+offset_right = 267.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc141" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 60.0
+offset_right = 279.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc142" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 60.0
+offset_right = 291.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="bottom19" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 228.0
+offset_top = 72.0
+offset_right = 231.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom20" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 240.0
+offset_top = 72.0
+offset_right = 243.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom21" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 252.0
+offset_top = 72.0
+offset_right = 255.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom22" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 264.0
+offset_top = 72.0
+offset_right = 267.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom23" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 72.0
+offset_right = 279.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom24" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 72.0
+offset_right = 291.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="top19" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 276.0
+offset_right = 279.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top20" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 264.0
+offset_right = 267.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top21" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 252.0
+offset_right = 255.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top22" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 240.0
+offset_right = 243.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top23" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 228.0
+offset_right = 231.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top24" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 288.0
+offset_right = 291.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="DtBox9SliceTc143" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 12.0
+offset_right = 303.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc144" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 12.0
+offset_right = 315.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc145" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 12.0
+offset_right = 327.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc146" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 12.0
+offset_right = 339.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc147" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 12.0
+offset_right = 351.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc148" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 12.0
+offset_right = 363.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc149" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 24.0
+offset_right = 303.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc150" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 24.0
+offset_right = 315.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc151" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 24.0
+offset_right = 327.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc152" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 24.0
+offset_right = 339.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc153" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 24.0
+offset_right = 351.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc154" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 24.0
+offset_right = 363.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc155" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 36.0
+offset_right = 303.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc156" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 36.0
+offset_right = 315.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc157" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 36.0
+offset_right = 327.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc158" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 36.0
+offset_right = 339.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc159" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 36.0
+offset_right = 351.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc160" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 36.0
+offset_right = 363.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc161" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 48.0
+offset_right = 303.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc162" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 48.0
+offset_right = 315.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc163" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 48.0
+offset_right = 327.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc164" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 48.0
+offset_right = 339.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc165" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 48.0
+offset_right = 351.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc166" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 48.0
+offset_right = 363.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc167" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 60.0
+offset_right = 303.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc168" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 60.0
+offset_right = 315.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc169" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 60.0
+offset_right = 327.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc170" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 60.0
+offset_right = 339.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc171" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 60.0
+offset_right = 351.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc172" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 60.0
+offset_right = 363.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="bottom25" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 72.0
+offset_right = 303.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom26" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 72.0
+offset_right = 315.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom27" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 324.0
+offset_top = 72.0
+offset_right = 327.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom28" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 336.0
+offset_top = 72.0
+offset_right = 339.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom29" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 348.0
+offset_top = 72.0
+offset_right = 351.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom30" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 360.0
+offset_top = 72.0
+offset_right = 363.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="top25" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 348.0
+offset_right = 351.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top26" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 336.0
+offset_right = 339.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top27" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 324.0
+offset_right = 327.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top28" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 312.0
+offset_right = 315.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top29" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 300.0
+offset_right = 303.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top30" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 360.0
+offset_right = 363.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="DtBox9SliceTc173" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 12.0
+offset_right = 375.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc174" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 12.0
+offset_right = 387.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc175" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 12.0
+offset_right = 399.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc176" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 12.0
+offset_right = 411.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc177" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 12.0
+offset_right = 423.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc178" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 12.0
+offset_right = 435.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc179" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 24.0
+offset_right = 375.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc180" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 24.0
+offset_right = 387.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc181" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 24.0
+offset_right = 399.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc182" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 24.0
+offset_right = 411.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc183" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 24.0
+offset_right = 423.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc184" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 24.0
+offset_right = 435.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc185" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 36.0
+offset_right = 375.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc186" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 36.0
+offset_right = 387.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc187" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 36.0
+offset_right = 399.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc188" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 36.0
+offset_right = 411.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc189" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 36.0
+offset_right = 423.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc190" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 36.0
+offset_right = 435.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc191" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 48.0
+offset_right = 375.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc192" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 48.0
+offset_right = 387.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc193" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 48.0
+offset_right = 399.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc194" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 48.0
+offset_right = 411.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc195" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 48.0
+offset_right = 423.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc196" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 48.0
+offset_right = 435.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc197" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 60.0
+offset_right = 375.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc198" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 60.0
+offset_right = 387.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc199" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 60.0
+offset_right = 399.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc200" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 60.0
+offset_right = 411.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc201" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 60.0
+offset_right = 423.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc202" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 60.0
+offset_right = 435.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="bottom31" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 372.0
+offset_top = 72.0
+offset_right = 375.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom32" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 72.0
+offset_right = 387.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom33" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 396.0
+offset_top = 72.0
+offset_right = 399.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom34" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 408.0
+offset_top = 72.0
+offset_right = 411.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom35" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 420.0
+offset_top = 72.0
+offset_right = 423.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom36" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 432.0
+offset_top = 72.0
+offset_right = 435.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="top31" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 420.0
+offset_right = 423.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top32" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 408.0
+offset_right = 411.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top33" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 396.0
+offset_right = 399.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top34" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 384.0
+offset_right = 387.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top35" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 372.0
+offset_right = 375.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top36" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 432.0
+offset_right = 435.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="DtBox9SliceTc203" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 12.0
+offset_right = 447.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc204" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 12.0
+offset_right = 459.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc205" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 12.0
+offset_right = 471.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc206" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 12.0
+offset_right = 483.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc207" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 12.0
+offset_right = 495.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc208" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 12.0
+offset_right = 507.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc209" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 24.0
+offset_right = 447.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc210" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 24.0
+offset_right = 459.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc211" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 24.0
+offset_right = 471.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc212" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 24.0
+offset_right = 483.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc213" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 24.0
+offset_right = 495.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc214" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 24.0
+offset_right = 507.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc215" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 36.0
+offset_right = 447.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc216" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 36.0
+offset_right = 459.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc217" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 36.0
+offset_right = 471.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc218" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 36.0
+offset_right = 483.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc219" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 36.0
+offset_right = 495.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc220" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 36.0
+offset_right = 507.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc221" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 48.0
+offset_right = 447.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc222" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 48.0
+offset_right = 459.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc223" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 48.0
+offset_right = 471.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc224" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 48.0
+offset_right = 483.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc225" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 48.0
+offset_right = 495.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc226" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 48.0
+offset_right = 507.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc227" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 60.0
+offset_right = 447.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc228" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 60.0
+offset_right = 459.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc229" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 60.0
+offset_right = 471.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc230" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 60.0
+offset_right = 483.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc231" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 60.0
+offset_right = 495.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc232" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 60.0
+offset_right = 507.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc233" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 60.0
+offset_right = 519.0
+offset_bottom = 63.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc234" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 48.0
+offset_right = 519.0
+offset_bottom = 51.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc235" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 36.0
+offset_right = 519.0
+offset_bottom = 39.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc236" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 24.0
+offset_right = 519.0
+offset_bottom = 27.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="DtBox9SliceTc237" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 12.0
+offset_right = 519.0
+offset_bottom = 15.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_3el6m")
+
+[node name="bottom37" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 444.0
+offset_top = 72.0
+offset_right = 447.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom38" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 456.0
+offset_top = 72.0
+offset_right = 459.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom39" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 72.0
+offset_right = 471.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom40" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 72.0
+offset_right = 483.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom41" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 492.0
+offset_top = 72.0
+offset_right = 495.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom42" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 504.0
+offset_top = 72.0
+offset_right = 507.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="bottom43" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 516.0
+offset_top = 72.0
+offset_right = 519.0
+offset_bottom = 75.0
+scale = Vector2(4, 4)
+texture = ExtResource("21_r8coh")
+
+[node name="top37" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 492.0
+offset_right = 495.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top38" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 480.0
+offset_right = 483.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top39" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 468.0
+offset_right = 471.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top40" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 456.0
+offset_right = 459.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top41" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 444.0
+offset_right = 447.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top42" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 504.0
+offset_right = 507.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="top43" type="TextureRect" parent="ToolboxContainer"]
+layout_mode = 0
+offset_left = 516.0
+offset_right = 519.0
+offset_bottom = 3.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_cbh32")
+
+[node name="Toolbox" type="HBoxContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -224.0
+offset_top = -88.0
+offset_right = 224.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme = SubResource("Theme_ngjdw")
+theme_override_constants/separation = 64
+
+[node name="box1" type="Control" parent="Toolbox"]
 texture_filter = 1
 layout_mode = 2
+
+[node name="boxTexture" type="Control" parent="Toolbox/box1"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DtBox9SliceC" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 25.0
+offset_right = 39.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceBc" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 49.0
+offset_right = 15.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc2" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 49.0
+offset_right = 27.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc3" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 49.0
+offset_right = 39.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBr" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 49.0
+offset_right = 51.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_lex1b")
+
+[node name="DtBox9SliceBl" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 3.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_3lgjx")
+
+[node name="DtBox9SliceLc" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 3.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc2" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 3.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc3" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 3.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceTl" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("17_f8ocv")
+
+[node name="DtBox9SliceTc" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc2" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc3" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 1.0
+offset_right = 15.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTr" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 1.0
+offset_right = 51.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("19_7fo3c")
+
+[node name="DtBox9SliceRc" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 25.0
+offset_right = 51.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc2" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 51.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc3" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 13.0
+offset_right = 51.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceC2" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 37.0
+offset_right = 39.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC3" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 37.0
+offset_right = 15.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC4" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 13.0
+offset_right = 39.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC5" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 15.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC6" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 27.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC7" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 27.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC8" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 13.0
+offset_right = 27.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC9" type="TextureRect" parent="Toolbox/box1/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 25.0
+offset_right = 15.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="item1" type="TextureRect" parent="Toolbox/box1"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 45.0
+offset_bottom = 45.0
 texture = ExtResource("3_a2vap")
-expand_mode = 5
+stretch_mode = 5
 
-[node name="axeSelector" type="Control" parent="tools/axe"]
-unique_name_in_owner = true
-layout_mode = 2
+[node name="count" type="Control" parent="Toolbox/box1"]
+visible = false
+modulate = Color(0.909804, 0.752941, 0.560784, 1)
+texture_filter = 1
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 75.0
+offset_bottom = 45.0
+
+[node name="countBoxTexture" type="TextureRect" parent="Toolbox/box1/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 9.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("30_wor58")
+
+[node name="countBoxTexture2" type="TextureRect" parent="Toolbox/box1/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 15.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("31_gtlyn")
+
+[node name="countBoxTexture3" type="TextureRect" parent="Toolbox/box1/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 15.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("32_sf573")
+
+[node name="countBoxTexture4" type="TextureRect" parent="Toolbox/box1/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 15.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("33_1rvb0")
+
+[node name="countBoxTexture5" type="TextureRect" parent="Toolbox/box1/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 9.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("34_unq0k")
+
+[node name="countBoxTexture6" type="TextureRect" parent="Toolbox/box1/count"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("35_ef7a5")
+
+[node name="countBoxTexture7" type="TextureRect" parent="Toolbox/box1/count"]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 3.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("36_7v5uf")
+
+[node name="countBoxTexture8" type="TextureRect" parent="Toolbox/box1/count"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 3.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("37_run8i")
+
+[node name="countBoxTexture9" type="TextureRect" parent="Toolbox/box1/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 9.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("38_k32as")
+
+[node name="countLabel" type="Label" parent="Toolbox/box1/count"]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 33.0
+text = "10
+"
+label_settings = SubResource("LabelSettings_gtlyn")
+horizontal_alignment = 1
+
+[node name="boxSelector" type="Control" parent="Toolbox/box1"]
+layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="TextureRect9" type="TextureRect" parent="tools/axe/axeSelector"]
+[node name="TextureRect9" type="TextureRect" parent="Toolbox/box1/boxSelector"]
 texture_filter = 1
-offset_left = -17.0
-offset_top = -14.0
-offset_bottom = 4.0
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 13.0
+offset_bottom = 15.0
 texture = ExtResource("4_u7ps2")
 
-[node name="TextureRect10" type="TextureRect" parent="tools/axe/axeSelector"]
+[node name="TextureRect10" type="TextureRect" parent="Toolbox/box1/boxSelector"]
 texture_filter = 1
-offset_left = 41.0
-offset_top = -15.0
-offset_right = 58.0
-offset_bottom = 3.0
+layout_mode = 0
+offset_left = 48.0
+offset_top = -3.0
+offset_right = 65.0
+offset_bottom = 15.0
 texture = ExtResource("5_teh6u")
 
-[node name="TextureRect11" type="TextureRect" parent="tools/axe/axeSelector"]
+[node name="TextureRect11" type="TextureRect" parent="Toolbox/box1/boxSelector"]
 texture_filter = 1
-offset_left = 41.0
-offset_top = 39.0
-offset_right = 58.0
-offset_bottom = 57.0
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 65.0
+offset_bottom = 62.0
 texture = ExtResource("6_l7l08")
 
-[node name="TextureRect12" type="TextureRect" parent="tools/axe/axeSelector"]
+[node name="TextureRect12" type="TextureRect" parent="Toolbox/box1/boxSelector"]
 texture_filter = 1
-offset_left = -17.0
-offset_top = 39.0
-offset_bottom = 57.0
+layout_mode = 0
+offset_left = -4.0
+offset_top = 44.0
+offset_right = 13.0
+offset_bottom = 62.0
 texture = ExtResource("4_f7omg")
 
-[node name="wateringcan" type="TextureRect" parent="tools"]
+[node name="box2" type="Control" parent="Toolbox"]
+texture_filter = 1
 layout_mode = 2
+
+[node name="boxTexture" type="Control" parent="Toolbox/box2"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DtBox9SliceC" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 25.0
+offset_right = 39.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceBc" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 49.0
+offset_right = 15.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc2" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 49.0
+offset_right = 27.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc3" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 49.0
+offset_right = 39.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBr" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 49.0
+offset_right = 51.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_lex1b")
+
+[node name="DtBox9SliceBl" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 3.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_3lgjx")
+
+[node name="DtBox9SliceLc" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 3.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc2" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 3.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc3" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 3.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceTl" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("17_f8ocv")
+
+[node name="DtBox9SliceTc" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc2" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc3" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 1.0
+offset_right = 15.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTr" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 1.0
+offset_right = 51.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("19_7fo3c")
+
+[node name="DtBox9SliceRc" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 25.0
+offset_right = 51.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc2" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 51.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc3" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 13.0
+offset_right = 51.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceC2" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 37.0
+offset_right = 39.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC3" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 37.0
+offset_right = 15.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC4" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 13.0
+offset_right = 39.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC5" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 15.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC6" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 27.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC7" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 27.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC8" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 13.0
+offset_right = 27.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC9" type="TextureRect" parent="Toolbox/box2/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 25.0
+offset_right = 15.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="item2" type="TextureRect" parent="Toolbox/box2"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 45.0
+offset_bottom = 45.0
 texture = ExtResource("8_l7l08")
-expand_mode = 5
+stretch_mode = 5
 
-[node name="wateringCanSelector" type="Control" parent="tools/wateringcan"]
-unique_name_in_owner = true
-layout_mode = 2
+[node name="count" type="Control" parent="Toolbox/box2"]
+visible = false
+modulate = Color(0.909804, 0.752941, 0.560784, 1)
+texture_filter = 1
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 75.0
+offset_bottom = 45.0
+
+[node name="countBoxTexture" type="TextureRect" parent="Toolbox/box2/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 9.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("30_wor58")
+
+[node name="countBoxTexture2" type="TextureRect" parent="Toolbox/box2/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 15.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("31_gtlyn")
+
+[node name="countBoxTexture3" type="TextureRect" parent="Toolbox/box2/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 15.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("32_sf573")
+
+[node name="countBoxTexture4" type="TextureRect" parent="Toolbox/box2/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 15.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("33_1rvb0")
+
+[node name="countBoxTexture5" type="TextureRect" parent="Toolbox/box2/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 9.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("34_unq0k")
+
+[node name="countBoxTexture6" type="TextureRect" parent="Toolbox/box2/count"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("35_ef7a5")
+
+[node name="countBoxTexture7" type="TextureRect" parent="Toolbox/box2/count"]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 3.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("36_7v5uf")
+
+[node name="countBoxTexture8" type="TextureRect" parent="Toolbox/box2/count"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 3.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("37_run8i")
+
+[node name="countBoxTexture9" type="TextureRect" parent="Toolbox/box2/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 9.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("38_k32as")
+
+[node name="countLabel" type="Label" parent="Toolbox/box2/count"]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 33.0
+text = "10
+"
+label_settings = SubResource("LabelSettings_gtlyn")
+horizontal_alignment = 1
+
+[node name="boxSelector" type="Control" parent="Toolbox/box2"]
+layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
+offset_bottom = 40.0
 
-[node name="TextureRect9" type="TextureRect" parent="tools/wateringcan/wateringCanSelector"]
+[node name="TextureRect9" type="TextureRect" parent="Toolbox/box2/boxSelector"]
 texture_filter = 1
-offset_left = -17.0
-offset_top = -14.0
-offset_bottom = 4.0
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 13.0
+offset_bottom = 15.0
 texture = ExtResource("4_u7ps2")
 
-[node name="TextureRect10" type="TextureRect" parent="tools/wateringcan/wateringCanSelector"]
+[node name="TextureRect10" type="TextureRect" parent="Toolbox/box2/boxSelector"]
 texture_filter = 1
-offset_left = 41.0
-offset_top = -15.0
-offset_right = 58.0
-offset_bottom = 3.0
+layout_mode = 0
+offset_left = 48.0
+offset_top = -3.0
+offset_right = 65.0
+offset_bottom = 15.0
 texture = ExtResource("5_teh6u")
 
-[node name="TextureRect11" type="TextureRect" parent="tools/wateringcan/wateringCanSelector"]
+[node name="TextureRect11" type="TextureRect" parent="Toolbox/box2/boxSelector"]
 texture_filter = 1
-offset_left = 41.0
-offset_top = 39.0
-offset_right = 58.0
-offset_bottom = 57.0
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 65.0
+offset_bottom = 62.0
 texture = ExtResource("6_l7l08")
 
-[node name="TextureRect12" type="TextureRect" parent="tools/wateringcan/wateringCanSelector"]
+[node name="TextureRect12" type="TextureRect" parent="Toolbox/box2/boxSelector"]
 texture_filter = 1
-offset_left = -17.0
-offset_top = 39.0
-offset_bottom = 57.0
+layout_mode = 0
+offset_left = -4.0
+offset_top = 44.0
+offset_right = 13.0
+offset_bottom = 62.0
 texture = ExtResource("4_f7omg")
 
-[node name="shovel" type="TextureRect" parent="tools"]
-layout_mode = 2
-texture = ExtResource("8_teh6u")
-expand_mode = 5
-
-[node name="shovelSelector" type="Control" parent="tools/shovel"]
-unique_name_in_owner = true
-anchors_preset = 0
-
-[node name="TextureRect9" type="TextureRect" parent="tools/shovel/shovelSelector"]
+[node name="box3" type="Control" parent="Toolbox"]
 texture_filter = 1
-offset_left = -17.0
-offset_top = -14.0
+layout_mode = 2
+
+[node name="boxTexture" type="Control" parent="Toolbox/box3"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DtBox9SliceC" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 25.0
+offset_right = 39.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceBc" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 49.0
+offset_right = 15.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc2" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 49.0
+offset_right = 27.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc3" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 49.0
+offset_right = 39.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBr" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 49.0
+offset_right = 51.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_lex1b")
+
+[node name="DtBox9SliceBl" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 3.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_3lgjx")
+
+[node name="DtBox9SliceLc" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 3.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc2" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 3.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc3" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 3.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceTl" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 3.0
 offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("17_f8ocv")
+
+[node name="DtBox9SliceTc" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc2" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc3" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 1.0
+offset_right = 15.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTr" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 1.0
+offset_right = 51.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("19_7fo3c")
+
+[node name="DtBox9SliceRc" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 25.0
+offset_right = 51.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc2" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 51.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc3" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 13.0
+offset_right = 51.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceC2" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 37.0
+offset_right = 39.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC3" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 37.0
+offset_right = 15.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC4" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 13.0
+offset_right = 39.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC5" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 15.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC6" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 27.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC7" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 27.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC8" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 13.0
+offset_right = 27.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC9" type="TextureRect" parent="Toolbox/box3/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 25.0
+offset_right = 15.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="item3" type="TextureRect" parent="Toolbox/box3"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 45.0
+offset_bottom = 45.0
+texture = ExtResource("8_teh6u")
+stretch_mode = 5
+
+[node name="count" type="Control" parent="Toolbox/box3"]
+visible = false
+modulate = Color(0.909804, 0.752941, 0.560784, 1)
+texture_filter = 1
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 75.0
+offset_bottom = 45.0
+
+[node name="countBoxTexture" type="TextureRect" parent="Toolbox/box3/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 9.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("30_wor58")
+
+[node name="countBoxTexture2" type="TextureRect" parent="Toolbox/box3/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 15.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("31_gtlyn")
+
+[node name="countBoxTexture3" type="TextureRect" parent="Toolbox/box3/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 15.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("32_sf573")
+
+[node name="countBoxTexture4" type="TextureRect" parent="Toolbox/box3/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 15.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("33_1rvb0")
+
+[node name="countBoxTexture5" type="TextureRect" parent="Toolbox/box3/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 9.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("34_unq0k")
+
+[node name="countBoxTexture6" type="TextureRect" parent="Toolbox/box3/count"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("35_ef7a5")
+
+[node name="countBoxTexture7" type="TextureRect" parent="Toolbox/box3/count"]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 3.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("36_7v5uf")
+
+[node name="countBoxTexture8" type="TextureRect" parent="Toolbox/box3/count"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 3.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("37_run8i")
+
+[node name="countBoxTexture9" type="TextureRect" parent="Toolbox/box3/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 9.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("38_k32as")
+
+[node name="countLabel" type="Label" parent="Toolbox/box3/count"]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 33.0
+text = "10
+"
+label_settings = SubResource("LabelSettings_gtlyn")
+horizontal_alignment = 1
+
+[node name="boxSelector" type="Control" parent="Toolbox/box3"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect9" type="TextureRect" parent="Toolbox/box3/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 13.0
+offset_bottom = 15.0
 texture = ExtResource("4_u7ps2")
 
-[node name="TextureRect10" type="TextureRect" parent="tools/shovel/shovelSelector"]
+[node name="TextureRect10" type="TextureRect" parent="Toolbox/box3/boxSelector"]
 texture_filter = 1
-offset_left = 41.0
-offset_top = -15.0
-offset_right = 58.0
-offset_bottom = 3.0
+layout_mode = 0
+offset_left = 48.0
+offset_top = -3.0
+offset_right = 65.0
+offset_bottom = 15.0
 texture = ExtResource("5_teh6u")
 
-[node name="TextureRect11" type="TextureRect" parent="tools/shovel/shovelSelector"]
+[node name="TextureRect11" type="TextureRect" parent="Toolbox/box3/boxSelector"]
 texture_filter = 1
-offset_left = 41.0
-offset_top = 39.0
-offset_right = 58.0
-offset_bottom = 57.0
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 65.0
+offset_bottom = 62.0
 texture = ExtResource("6_l7l08")
 
-[node name="TextureRect12" type="TextureRect" parent="tools/shovel/shovelSelector"]
+[node name="TextureRect12" type="TextureRect" parent="Toolbox/box3/boxSelector"]
 texture_filter = 1
-offset_left = -17.0
-offset_top = 39.0
-offset_bottom = 57.0
+layout_mode = 0
+offset_left = -4.0
+offset_top = 44.0
+offset_right = 13.0
+offset_bottom = 62.0
+texture = ExtResource("4_f7omg")
+
+[node name="box4" type="Control" parent="Toolbox"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="boxTexture" type="Control" parent="Toolbox/box4"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DtBox9SliceC" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 25.0
+offset_right = 39.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceBc" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 49.0
+offset_right = 15.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc2" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 49.0
+offset_right = 27.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc3" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 49.0
+offset_right = 39.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBr" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 49.0
+offset_right = 51.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_lex1b")
+
+[node name="DtBox9SliceBl" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 3.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_3lgjx")
+
+[node name="DtBox9SliceLc" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 3.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc2" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 3.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc3" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 3.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceTl" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("17_f8ocv")
+
+[node name="DtBox9SliceTc" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc2" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc3" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 1.0
+offset_right = 15.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTr" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 1.0
+offset_right = 51.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("19_7fo3c")
+
+[node name="DtBox9SliceRc" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 25.0
+offset_right = 51.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc2" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 51.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc3" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 13.0
+offset_right = 51.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceC2" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 37.0
+offset_right = 39.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC3" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 37.0
+offset_right = 15.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC4" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 13.0
+offset_right = 39.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC5" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 15.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC6" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 27.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC7" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 27.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC8" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 13.0
+offset_right = 27.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC9" type="TextureRect" parent="Toolbox/box4/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 25.0
+offset_right = 15.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="item4" type="TextureRect" parent="Toolbox/box4"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 45.0
+offset_bottom = 45.0
+texture = ExtResource("1_xwq20")
+stretch_mode = 5
+
+[node name="count" type="Control" parent="Toolbox/box4"]
+modulate = Color(0.909996, 0.754668, 0.560973, 1)
+texture_filter = 1
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 75.0
+offset_bottom = 45.0
+
+[node name="countBoxTexture" type="TextureRect" parent="Toolbox/box4/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 9.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("30_wor58")
+
+[node name="countBoxTexture2" type="TextureRect" parent="Toolbox/box4/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 15.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("31_gtlyn")
+
+[node name="countBoxTexture3" type="TextureRect" parent="Toolbox/box4/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 15.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("32_sf573")
+
+[node name="countBoxTexture4" type="TextureRect" parent="Toolbox/box4/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 15.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("33_1rvb0")
+
+[node name="countBoxTexture5" type="TextureRect" parent="Toolbox/box4/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 9.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("34_unq0k")
+
+[node name="countBoxTexture6" type="TextureRect" parent="Toolbox/box4/count"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("35_ef7a5")
+
+[node name="countBoxTexture7" type="TextureRect" parent="Toolbox/box4/count"]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 3.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("36_7v5uf")
+
+[node name="countBoxTexture8" type="TextureRect" parent="Toolbox/box4/count"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 3.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("37_run8i")
+
+[node name="countBoxTexture9" type="TextureRect" parent="Toolbox/box4/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 9.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("38_k32as")
+
+[node name="countLabel" type="Label" parent="Toolbox/box4/count"]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 33.0
+text = "10
+"
+label_settings = SubResource("LabelSettings_gtlyn")
+horizontal_alignment = 1
+
+[node name="boxSelector" type="Control" parent="Toolbox/box4"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect9" type="TextureRect" parent="Toolbox/box4/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 13.0
+offset_bottom = 15.0
+texture = ExtResource("4_u7ps2")
+
+[node name="TextureRect10" type="TextureRect" parent="Toolbox/box4/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = -3.0
+offset_right = 65.0
+offset_bottom = 15.0
+texture = ExtResource("5_teh6u")
+
+[node name="TextureRect11" type="TextureRect" parent="Toolbox/box4/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 65.0
+offset_bottom = 62.0
+texture = ExtResource("6_l7l08")
+
+[node name="TextureRect12" type="TextureRect" parent="Toolbox/box4/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = 44.0
+offset_right = 13.0
+offset_bottom = 62.0
+texture = ExtResource("4_f7omg")
+
+[node name="box5" type="Control" parent="Toolbox"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="boxTexture" type="Control" parent="Toolbox/box5"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DtBox9SliceC" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 25.0
+offset_right = 39.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceBc" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 49.0
+offset_right = 15.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc2" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 49.0
+offset_right = 27.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc3" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 49.0
+offset_right = 39.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBr" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 49.0
+offset_right = 51.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_lex1b")
+
+[node name="DtBox9SliceBl" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 3.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_3lgjx")
+
+[node name="DtBox9SliceLc" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 3.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc2" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 3.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc3" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 3.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceTl" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("17_f8ocv")
+
+[node name="DtBox9SliceTc" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc2" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc3" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 1.0
+offset_right = 15.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTr" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 1.0
+offset_right = 51.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("19_7fo3c")
+
+[node name="DtBox9SliceRc" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 25.0
+offset_right = 51.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc2" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 51.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc3" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 13.0
+offset_right = 51.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceC2" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 37.0
+offset_right = 39.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC3" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 37.0
+offset_right = 15.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC4" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 13.0
+offset_right = 39.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC5" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 15.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC6" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 27.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC7" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 27.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC8" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 13.0
+offset_right = 27.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC9" type="TextureRect" parent="Toolbox/box5/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 25.0
+offset_right = 15.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="item5" type="TextureRect" parent="Toolbox/box5"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 45.0
+offset_bottom = 45.0
+texture = ExtResource("11_74pwq")
+stretch_mode = 5
+
+[node name="count" type="Control" parent="Toolbox/box5"]
+modulate = Color(0.909804, 0.752941, 0.560784, 1)
+texture_filter = 1
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 75.0
+offset_bottom = 45.0
+
+[node name="countBoxTexture" type="TextureRect" parent="Toolbox/box5/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 9.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("30_wor58")
+
+[node name="countBoxTexture2" type="TextureRect" parent="Toolbox/box5/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 15.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("31_gtlyn")
+
+[node name="countBoxTexture3" type="TextureRect" parent="Toolbox/box5/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 15.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("32_sf573")
+
+[node name="countBoxTexture4" type="TextureRect" parent="Toolbox/box5/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 15.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("33_1rvb0")
+
+[node name="countBoxTexture5" type="TextureRect" parent="Toolbox/box5/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 9.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("34_unq0k")
+
+[node name="countBoxTexture6" type="TextureRect" parent="Toolbox/box5/count"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("35_ef7a5")
+
+[node name="countBoxTexture7" type="TextureRect" parent="Toolbox/box5/count"]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 3.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("36_7v5uf")
+
+[node name="countBoxTexture8" type="TextureRect" parent="Toolbox/box5/count"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 3.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("37_run8i")
+
+[node name="countBoxTexture9" type="TextureRect" parent="Toolbox/box5/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 9.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("38_k32as")
+
+[node name="countLabel" type="Label" parent="Toolbox/box5/count"]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 33.0
+text = "10
+"
+label_settings = SubResource("LabelSettings_gtlyn")
+horizontal_alignment = 1
+
+[node name="boxSelector" type="Control" parent="Toolbox/box5"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect9" type="TextureRect" parent="Toolbox/box5/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 13.0
+offset_bottom = 15.0
+texture = ExtResource("4_u7ps2")
+
+[node name="TextureRect10" type="TextureRect" parent="Toolbox/box5/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = -3.0
+offset_right = 65.0
+offset_bottom = 15.0
+texture = ExtResource("5_teh6u")
+
+[node name="TextureRect11" type="TextureRect" parent="Toolbox/box5/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 65.0
+offset_bottom = 62.0
+texture = ExtResource("6_l7l08")
+
+[node name="TextureRect12" type="TextureRect" parent="Toolbox/box5/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = 44.0
+offset_right = 13.0
+offset_bottom = 62.0
+texture = ExtResource("4_f7omg")
+
+[node name="box6" type="Control" parent="Toolbox"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="boxTexture" type="Control" parent="Toolbox/box6"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DtBox9SliceC" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 25.0
+offset_right = 39.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceBc" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 49.0
+offset_right = 15.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc2" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 49.0
+offset_right = 27.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc3" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 49.0
+offset_right = 39.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBr" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 49.0
+offset_right = 51.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_lex1b")
+
+[node name="DtBox9SliceBl" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 3.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_3lgjx")
+
+[node name="DtBox9SliceLc" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 3.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc2" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 3.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc3" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 3.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceTl" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("17_f8ocv")
+
+[node name="DtBox9SliceTc" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc2" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc3" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 1.0
+offset_right = 15.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTr" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 1.0
+offset_right = 51.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("19_7fo3c")
+
+[node name="DtBox9SliceRc" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 25.0
+offset_right = 51.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc2" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 51.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc3" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 13.0
+offset_right = 51.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceC2" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 37.0
+offset_right = 39.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC3" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 37.0
+offset_right = 15.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC4" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 13.0
+offset_right = 39.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC5" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 15.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC6" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 27.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC7" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 27.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC8" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 13.0
+offset_right = 27.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC9" type="TextureRect" parent="Toolbox/box6/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 25.0
+offset_right = 15.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="item6" type="TextureRect" parent="Toolbox/box6"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 45.0
+offset_bottom = 45.0
+texture = ExtResource("2_4r020")
+stretch_mode = 5
+
+[node name="count" type="Control" parent="Toolbox/box6"]
+modulate = Color(0.909804, 0.752941, 0.560784, 1)
+texture_filter = 1
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 75.0
+offset_bottom = 45.0
+
+[node name="countBoxTexture" type="TextureRect" parent="Toolbox/box6/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 9.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("30_wor58")
+
+[node name="countBoxTexture2" type="TextureRect" parent="Toolbox/box6/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 15.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("31_gtlyn")
+
+[node name="countBoxTexture3" type="TextureRect" parent="Toolbox/box6/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 15.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("32_sf573")
+
+[node name="countBoxTexture4" type="TextureRect" parent="Toolbox/box6/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 15.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("33_1rvb0")
+
+[node name="countBoxTexture5" type="TextureRect" parent="Toolbox/box6/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 9.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("34_unq0k")
+
+[node name="countBoxTexture6" type="TextureRect" parent="Toolbox/box6/count"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("35_ef7a5")
+
+[node name="countBoxTexture7" type="TextureRect" parent="Toolbox/box6/count"]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 3.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("36_7v5uf")
+
+[node name="countBoxTexture8" type="TextureRect" parent="Toolbox/box6/count"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 3.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("37_run8i")
+
+[node name="countBoxTexture9" type="TextureRect" parent="Toolbox/box6/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 9.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("38_k32as")
+
+[node name="countLabel" type="Label" parent="Toolbox/box6/count"]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 33.0
+text = "10
+"
+label_settings = SubResource("LabelSettings_gtlyn")
+horizontal_alignment = 1
+
+[node name="boxSelector" type="Control" parent="Toolbox/box6"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect9" type="TextureRect" parent="Toolbox/box6/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 13.0
+offset_bottom = 15.0
+texture = ExtResource("4_u7ps2")
+
+[node name="TextureRect10" type="TextureRect" parent="Toolbox/box6/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = -3.0
+offset_right = 65.0
+offset_bottom = 15.0
+texture = ExtResource("5_teh6u")
+
+[node name="TextureRect11" type="TextureRect" parent="Toolbox/box6/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 65.0
+offset_bottom = 62.0
+texture = ExtResource("6_l7l08")
+
+[node name="TextureRect12" type="TextureRect" parent="Toolbox/box6/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = 44.0
+offset_right = 13.0
+offset_bottom = 62.0
+texture = ExtResource("4_f7omg")
+
+[node name="box7" type="Control" parent="Toolbox"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="boxTexture" type="Control" parent="Toolbox/box7"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DtBox9SliceC" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 25.0
+offset_right = 39.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceBc" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 49.0
+offset_right = 15.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc2" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 49.0
+offset_right = 27.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc3" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 49.0
+offset_right = 39.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBr" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 49.0
+offset_right = 51.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_lex1b")
+
+[node name="DtBox9SliceBl" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 3.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_3lgjx")
+
+[node name="DtBox9SliceLc" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 3.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc2" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 3.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc3" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 3.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceTl" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("17_f8ocv")
+
+[node name="DtBox9SliceTc" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc2" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc3" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 1.0
+offset_right = 15.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTr" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 1.0
+offset_right = 51.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("19_7fo3c")
+
+[node name="DtBox9SliceRc" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 25.0
+offset_right = 51.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc2" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 51.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc3" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 13.0
+offset_right = 51.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceC2" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 37.0
+offset_right = 39.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC3" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 37.0
+offset_right = 15.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC4" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 13.0
+offset_right = 39.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC5" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 15.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC6" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 27.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC7" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 27.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC8" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 13.0
+offset_right = 27.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC9" type="TextureRect" parent="Toolbox/box7/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 25.0
+offset_right = 15.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="item7" type="TextureRect" parent="Toolbox/box7"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 45.0
+offset_bottom = 45.0
+stretch_mode = 5
+
+[node name="count" type="Control" parent="Toolbox/box7"]
+modulate = Color(0.909804, 0.752941, 0.560784, 1)
+texture_filter = 1
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 75.0
+offset_bottom = 45.0
+
+[node name="countBoxTexture" type="TextureRect" parent="Toolbox/box7/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 9.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("30_wor58")
+
+[node name="countBoxTexture2" type="TextureRect" parent="Toolbox/box7/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 15.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("31_gtlyn")
+
+[node name="countBoxTexture3" type="TextureRect" parent="Toolbox/box7/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 15.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("32_sf573")
+
+[node name="countBoxTexture4" type="TextureRect" parent="Toolbox/box7/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 15.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("33_1rvb0")
+
+[node name="countBoxTexture5" type="TextureRect" parent="Toolbox/box7/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 9.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("34_unq0k")
+
+[node name="countBoxTexture6" type="TextureRect" parent="Toolbox/box7/count"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("35_ef7a5")
+
+[node name="countBoxTexture7" type="TextureRect" parent="Toolbox/box7/count"]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 3.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("36_7v5uf")
+
+[node name="countBoxTexture8" type="TextureRect" parent="Toolbox/box7/count"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 3.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("37_run8i")
+
+[node name="countBoxTexture9" type="TextureRect" parent="Toolbox/box7/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 9.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("38_k32as")
+
+[node name="countLabel" type="Label" parent="Toolbox/box7/count"]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 33.0
+text = "10
+"
+label_settings = SubResource("LabelSettings_gtlyn")
+horizontal_alignment = 1
+
+[node name="boxSelector" type="Control" parent="Toolbox/box7"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect9" type="TextureRect" parent="Toolbox/box7/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 13.0
+offset_bottom = 15.0
+texture = ExtResource("4_u7ps2")
+
+[node name="TextureRect10" type="TextureRect" parent="Toolbox/box7/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = -3.0
+offset_right = 65.0
+offset_bottom = 15.0
+texture = ExtResource("5_teh6u")
+
+[node name="TextureRect11" type="TextureRect" parent="Toolbox/box7/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 65.0
+offset_bottom = 62.0
+texture = ExtResource("6_l7l08")
+
+[node name="TextureRect12" type="TextureRect" parent="Toolbox/box7/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = 44.0
+offset_right = 13.0
+offset_bottom = 62.0
+texture = ExtResource("4_f7omg")
+
+[node name="box8" type="Control" parent="Toolbox"]
+texture_filter = 1
+layout_mode = 2
+
+[node name="boxTexture" type="Control" parent="Toolbox/box8"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DtBox9SliceC" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 25.0
+offset_right = 39.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceBc" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 49.0
+offset_right = 15.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc2" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 49.0
+offset_right = 27.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBc3" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 49.0
+offset_right = 39.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("13_r8coh")
+
+[node name="DtBox9SliceBr" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 49.0
+offset_right = 51.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("14_lex1b")
+
+[node name="DtBox9SliceBl" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_top = 49.0
+offset_right = 3.0
+offset_bottom = 52.0
+scale = Vector2(4, 4)
+texture = ExtResource("15_3lgjx")
+
+[node name="DtBox9SliceLc" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_top = 25.0
+offset_right = 3.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc2" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 3.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceLc3" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_top = 13.0
+offset_right = 3.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("16_lo3qk")
+
+[node name="DtBox9SliceTl" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("17_f8ocv")
+
+[node name="DtBox9SliceTc" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 1.0
+offset_right = 27.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc2" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTc3" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 1.0
+offset_right = 15.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("18_cbh32")
+
+[node name="DtBox9SliceTr" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 1.0
+offset_right = 51.0
+offset_bottom = 4.0
+scale = Vector2(4, 4)
+texture = ExtResource("19_7fo3c")
+
+[node name="DtBox9SliceRc" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 25.0
+offset_right = 51.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc2" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 37.0
+offset_right = 51.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceRc3" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 13.0
+offset_right = 51.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("20_3el6m")
+
+[node name="DtBox9SliceC2" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 37.0
+offset_right = 39.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC3" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 37.0
+offset_right = 15.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC4" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 13.0
+offset_right = 39.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC5" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 13.0
+offset_right = 15.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC6" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 37.0
+offset_right = 27.0
+offset_bottom = 40.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC7" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 25.0
+offset_right = 27.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC8" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 13.0
+offset_right = 27.0
+offset_bottom = 16.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="DtBox9SliceC9" type="TextureRect" parent="Toolbox/box8/boxTexture"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 25.0
+offset_right = 15.0
+offset_bottom = 28.0
+scale = Vector2(4, 4)
+texture = ExtResource("12_ngjdw")
+
+[node name="item8" type="TextureRect" parent="Toolbox/box8"]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 45.0
+offset_bottom = 45.0
+stretch_mode = 5
+
+[node name="count" type="Control" parent="Toolbox/box8"]
+modulate = Color(0.909804, 0.752941, 0.560784, 1)
+texture_filter = 1
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 75.0
+offset_bottom = 45.0
+
+[node name="countBoxTexture" type="TextureRect" parent="Toolbox/box8/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 12.0
+offset_right = 9.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("30_wor58")
+
+[node name="countBoxTexture2" type="TextureRect" parent="Toolbox/box8/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 15.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("31_gtlyn")
+
+[node name="countBoxTexture3" type="TextureRect" parent="Toolbox/box8/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 6.0
+offset_right = 15.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("32_sf573")
+
+[node name="countBoxTexture4" type="TextureRect" parent="Toolbox/box8/count"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 15.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("33_1rvb0")
+
+[node name="countBoxTexture5" type="TextureRect" parent="Toolbox/box8/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_right = 9.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("34_unq0k")
+
+[node name="countBoxTexture6" type="TextureRect" parent="Toolbox/box8/count"]
+layout_mode = 0
+offset_right = 3.0
+offset_bottom = 3.0
+scale = Vector2(2, 2)
+texture = ExtResource("35_ef7a5")
+
+[node name="countBoxTexture7" type="TextureRect" parent="Toolbox/box8/count"]
+layout_mode = 0
+offset_top = 6.0
+offset_right = 3.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("36_7v5uf")
+
+[node name="countBoxTexture8" type="TextureRect" parent="Toolbox/box8/count"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 3.0
+offset_bottom = 15.0
+scale = Vector2(2, 2)
+texture = ExtResource("37_run8i")
+
+[node name="countBoxTexture9" type="TextureRect" parent="Toolbox/box8/count"]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 9.0
+offset_bottom = 9.0
+scale = Vector2(2, 2)
+texture = ExtResource("38_k32as")
+
+[node name="countLabel" type="Label" parent="Toolbox/box8/count"]
+self_modulate = Color(0, 0, 0, 1)
+texture_filter = 1
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 15.0
+offset_bottom = 33.0
+text = "10
+"
+label_settings = SubResource("LabelSettings_gtlyn")
+horizontal_alignment = 1
+
+[node name="boxSelector" type="Control" parent="Toolbox/box8"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect9" type="TextureRect" parent="Toolbox/box8/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = -3.0
+offset_right = 13.0
+offset_bottom = 15.0
+texture = ExtResource("4_u7ps2")
+
+[node name="TextureRect10" type="TextureRect" parent="Toolbox/box8/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = -3.0
+offset_right = 65.0
+offset_bottom = 15.0
+texture = ExtResource("5_teh6u")
+
+[node name="TextureRect11" type="TextureRect" parent="Toolbox/box8/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 48.0
+offset_top = 44.0
+offset_right = 65.0
+offset_bottom = 62.0
+texture = ExtResource("6_l7l08")
+
+[node name="TextureRect12" type="TextureRect" parent="Toolbox/box8/boxSelector"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = 44.0
+offset_right = 13.0
+offset_bottom = 62.0
 texture = ExtResource("4_f7omg")

@@ -1,0 +1,145 @@
+[gd_scene load_steps=7 format=3 uid="uid://cr43c10ug6reh"]
+
+[ext_resource type="PackedScene" uid="uid://vl43nmp7kjx7" path="res://Scenes/Levels/ui.tscn" id="1_06iwn"]
+[ext_resource type="PackedScene" uid="uid://c2ihtfx2eo66o" path="res://Scenes/Levels/map.tscn" id="1_7dclk"]
+[ext_resource type="Script" uid="uid://ca7mw5m04ig76" path="res://Scenes/Levels/level.gd" id="1_eys32"]
+[ext_resource type="PackedScene" uid="uid://did6mydwk2md6" path="res://Scenes/Objects/tree.tscn" id="2_1m2b7"]
+[ext_resource type="PackedScene" uid="uid://cbvi42f4ocb4c" path="res://Scenes/Character/player.tscn" id="3_2ybwh"]
+[ext_resource type="PackedScene" uid="uid://c50f6bdqp4518" path="res://Scenes/Objects/soil.tscn" id="4_f5t4d"]
+
+[node name="second" type="Node2D"]
+script = ExtResource("1_eys32")
+
+[node name="map" parent="." instance=ExtResource("1_7dclk")]
+z_index = -10
+
+[node name="UI" parent="." instance=ExtResource("1_06iwn")]
+
+[node name="items" type="Node2D" parent="."]
+
+[node name="HourTimer" type="Timer" parent="."]
+wait_time = 120.0
+autostart = true
+
+[node name="ysort" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="soil" type="Node2D" parent="ysort"]
+y_sort_enabled = true
+
+[node name="soil" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-104, -120)
+
+[node name="soil2" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-88, -120)
+
+[node name="soil3" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-120, -104)
+
+[node name="soil4" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-104, -104)
+
+[node name="soil5" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-88, -104)
+
+[node name="soil6" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-72, -104)
+
+[node name="soil7" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-104, -88)
+
+[node name="soil8" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-88, -88)
+
+[node name="soil9" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-24, -120)
+
+[node name="soil10" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-8, -120)
+
+[node name="soil11" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-40, -104)
+
+[node name="soil12" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-24, -104)
+
+[node name="soil13" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-8, -104)
+
+[node name="soil14" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(8, -104)
+
+[node name="soil15" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-24, -88)
+
+[node name="soil16" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(-8, -88)
+
+[node name="soil17" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(56, -120)
+
+[node name="soil18" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(72, -120)
+
+[node name="soil19" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(40, -104)
+
+[node name="soil20" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(56, -104)
+
+[node name="soil21" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(72, -104)
+
+[node name="soil22" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(88, -104)
+
+[node name="soil23" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(56, -88)
+
+[node name="soil24" parent="ysort/soil" instance=ExtResource("4_f5t4d")]
+position = Vector2(72, -88)
+
+[node name="trees" type="Node2D" parent="ysort"]
+y_sort_enabled = true
+
+[node name="Tree" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-111, -66)
+
+[node name="Tree11" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-256, -94)
+
+[node name="Tree12" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-280, -124)
+
+[node name="Tree13" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-248, -146)
+
+[node name="Tree2" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-136, -128)
+
+[node name="Tree3" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-136, -160)
+
+[node name="Tree4" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-120, -144)
+
+[node name="Tree5" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-64, -71)
+
+[node name="Tree6" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-44, -168)
+
+[node name="Tree7" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-32, -160)
+
+[node name="Tree8" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-44, -152)
+
+[node name="Tree9" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(-56, -128)
+
+[node name="Tree10" parent="ysort/trees" instance=ExtResource("2_1m2b7")]
+position = Vector2(24, -130)
+
+[node name="player" parent="ysort" instance=ExtResource("3_2ybwh")]
+position = Vector2(-137, -72)

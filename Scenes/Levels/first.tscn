@@ -1,21 +1,114 @@
-[gd_scene load_steps=5 format=3 uid="uid://bfqfj3mtkgk65"]
+[gd_scene load_steps=8 format=3 uid="uid://bfqfj3mtkgk65"]
 
-[ext_resource type="PackedScene" uid="uid://cfiwju5g6inha" path="res://Scenes/Levels/level.tscn" id="1_62p2e"]
 [ext_resource type="Script" uid="uid://3hiwusa0351f" path="res://Scenes/Levels/first.gd" id="2_g5tb7"]
+[ext_resource type="PackedScene" uid="uid://c2ihtfx2eo66o" path="res://Scenes/Levels/map.tscn" id="2_x3k28"]
 [ext_resource type="PackedScene" uid="uid://did6mydwk2md6" path="res://Scenes/Objects/tree.tscn" id="3_2kug8"]
+[ext_resource type="PackedScene" uid="uid://c50f6bdqp4518" path="res://Scenes/Objects/soil.tscn" id="3_xnj3s"]
 [ext_resource type="PackedScene" uid="uid://bbhwkl3j60uil" path="res://Scenes/Objects/sunflower.tscn" id="4_hhjl8"]
+[ext_resource type="PackedScene" uid="uid://cbvi42f4ocb4c" path="res://Scenes/Character/player.tscn" id="7_fuaod"]
+[ext_resource type="PackedScene" uid="uid://vl43nmp7kjx7" path="res://Scenes/Levels/ui.tscn" id="8_jrduq"]
 
-[node name="firstLevel" instance=ExtResource("1_62p2e")]
+[node name="firstLevel" type="Node2D"]
 script = ExtResource("2_g5tb7")
 
-[node name="Tree" parent="ysorted/trees" index="0" instance=ExtResource("3_2kug8")]
+[node name="map" parent="." instance=ExtResource("2_x3k28")]
+z_index = -10
+metadata/_edit_lock_ = true
+
+[node name="test" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="soil" parent="test" instance=ExtResource("3_xnj3s")]
+position = Vector2(-40, -104)
+
+[node name="sunflower" parent="test" instance=ExtResource("4_hhjl8")]
+position = Vector2(-26, -120)
+
+[node name="environment" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="soil" type="Node2D" parent="environment"]
+y_sort_enabled = true
+
+[node name="soil" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(56, -120)
+
+[node name="soil2" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(72, -120)
+
+[node name="soil3" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(72, -104)
+
+[node name="soil6" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(88, -104)
+
+[node name="soil7" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(72, -88)
+
+[node name="soil8" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(56, -88)
+
+[node name="soil4" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(56, -104)
+
+[node name="soil5" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(40, -104)
+
+[node name="soil20" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(-104, -120)
+
+[node name="soil21" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(-88, -120)
+
+[node name="soil24" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(-88, -104)
+
+[node name="soil25" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(-72, -104)
+
+[node name="soil27" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(-88, -88)
+
+[node name="soil26" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(-104, -88)
+
+[node name="soil23" parent="environment/soil" instance=ExtResource("3_xnj3s")]
+position = Vector2(-104, -104)
+
+[node name="ysorted" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="trees" type="Node2D" parent="ysorted"]
+y_sort_enabled = true
+
+[node name="Tree" parent="ysorted/trees" instance=ExtResource("3_2kug8")]
 position = Vector2(-132, -136)
 
-[node name="Tree2" parent="ysorted/trees" index="1" instance=ExtResource("3_2kug8")]
+[node name="Tree2" parent="ysorted/trees" instance=ExtResource("3_2kug8")]
 position = Vector2(-110, -68)
 
-[node name="sunflower2" parent="ysorted/crop" index="0" instance=ExtResource("4_hhjl8")]
-position = Vector2(-8, -96)
+[node name="crop" type="Node2D" parent="ysorted"]
+y_sort_enabled = true
 
-[node name="sunflower" parent="ysorted/crop" index="1" instance=ExtResource("4_hhjl8")]
-position = Vector2(-24, -96)
+[node name="soil22" parent="ysorted/crop" instance=ExtResource("3_xnj3s")]
+position = Vector2(-120, -104)
+
+[node name="sunflower" parent="ysorted/crop" instance=ExtResource("4_hhjl8")]
+position = Vector2(-72, -104)
+
+[node name="sunflower3" parent="ysorted/crop" instance=ExtResource("4_hhjl8")]
+position = Vector2(-88, -104)
+
+[node name="player" parent="ysorted" instance=ExtResource("7_fuaod")]
+position = Vector2(-148, -69)
+
+[node name="UI" parent="." instance=ExtResource("8_jrduq")]
+
+[node name="items" type="Node2D" parent="."]
+
+[node name="HourTimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="player_performed_action" from="ysorted/player" to="." method="_on_player_player_performed_action"]
+[connection signal="timeout" from="HourTimer" to="." method="_on_hour_timer_timeout"]

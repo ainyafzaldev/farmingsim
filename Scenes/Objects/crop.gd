@@ -1,13 +1,12 @@
 extends Node2D
 class_name Crop
 
-signal player_near(crop)
-signal player_not_near(crop)
+signal plant_stage(stage, type)
 
 var needs_water:bool = true
 
-var stage:int = 0 # up to 5
-
+var stage:int = 0 # up to 4
+const max_stage = 4
 
 func _ready() -> void:
 	pass
@@ -24,17 +23,9 @@ func perform_action():
 	modulate = Color("ca8d78")
 	await get_tree().create_timer(0.6).timeout
 	modulate = Color("ffffff")
-	
-func show_indicators():
-	$indicators.visible = true
-func hide_indicators():
-	$indicators.visible = false
 
-
-func _on_near_crop_area_entered(area: Area2D) -> void:
-	player_near.emit(self)
-
-
-func _on_near_crop_area_exited(area: Area2D) -> void:
-	player_not_near.emit(self)
-	
+func _on_grow_timeout() -> void:
+	stage += 1
+	plant_stage.emit(stage)
+	if stage < max_stage:
+		$grow.start()

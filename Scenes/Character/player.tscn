@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://cbvi42f4ocb4c"]
+[gd_scene load_steps=48 format=3 uid="uid://cbvi42f4ocb4c"]
 
 [ext_resource type="Texture2D" uid="uid://bu2qehonerk06" path="res://Graphics/Characters/Human/WALKING/base_walk_strip8.png" id="1_bk5kl"]
 [ext_resource type="Texture2D" uid="uid://cl1ktw47vw8jt" path="res://Graphics/Characters/Human/IDLE/longhair_idle_strip9.png" id="1_l0tos"]
@@ -1218,6 +1218,21 @@ _data = {
 &"watering": SubResource("Animation_vgx5c")
 }
 
+[sub_resource type="Animation" id="Animation_f7pgc"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("detect hover:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_5hm3d"]
 resource_name = "left"
 step = 1.0
@@ -1256,6 +1271,18 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("detect hover:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-4, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_d8tfa"]
@@ -1297,9 +1324,22 @@ tracks/2/keys = {
 "update": 1,
 "values": [false]
 }
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("detect hover:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4, 1)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f7pgc"]
 _data = {
+&"RESET": SubResource("Animation_f7pgc"),
 &"left": SubResource("Animation_5hm3d"),
 &"right": SubResource("Animation_d8tfa")
 }
@@ -1313,9 +1353,10 @@ script = ExtResource("1_sfmyh")
 position = Vector2(-5.96046e-08, 0.5)
 scale = Vector2(1.87, 1.87)
 shape = SubResource("RectangleShape2D_bk5kl")
+metadata/_edit_lock_ = true
 
 [node name="detect hover" type="Area2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(4, 1)
 scale = Vector2(1.87, 1.87)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="detect hover"]
@@ -1325,28 +1366,29 @@ shape = SubResource("RectangleShape2D_sfmyh")
 y_sort_enabled = true
 texture_filter = 1
 position = Vector2(0, -5)
-texture = ExtResource("7_yg3nc")
-hframes = 10
+texture = ExtResource("13_v0bjn")
+hframes = 8
 metadata/_edit_lock_ = true
 
 [node name="Hair" type="Sprite2D" parent="."]
 y_sort_enabled = true
 texture_filter = 1
 position = Vector2(0, -5)
-texture = ExtResource("8_17ttd")
-hframes = 10
+texture = ExtResource("14_kaplj")
+hframes = 8
 metadata/_edit_lock_ = true
 
 [node name="Tool" type="Sprite2D" parent="."]
 y_sort_enabled = true
 texture_filter = 1
 position = Vector2(0, -5)
-texture = ExtResource("9_s7hvb")
-hframes = 10
+texture = ExtResource("15_4jgyf")
+hframes = 8
 metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+metadata/_edit_lock_ = true
 
 [node name="Animations" type="Node" parent="."]
 
