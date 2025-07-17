@@ -6,11 +6,11 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_uy01f"]
 radius = 8.06226
 
-[node name="Node2D" type="Area2D"]
+[node name="item" type="Area2D"]
 texture_filter = 1
 script = ExtResource("1_l3qvu")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="image" type="Sprite2D" parent="."]
 texture = ExtResource("1_uktud")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

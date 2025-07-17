@@ -40,6 +40,9 @@ func update_toolbar_scroll():
 		else:
 			selected_tool = abs(selected_tool)
 	Globals.toolbar_selection = selected_tool
+func update_tool_slector():
+	all_indicators_off()
+	load_tools()
 func all_indicators_off():
 	$Toolbox/box1/boxSelector.visible = false
 	$Toolbox/box2/boxSelector.visible = false
@@ -55,11 +58,15 @@ func load_tools():
 
 		var box = $Toolbox.get_child(box_num)
 		var item: TextureRect = box.get_child(1)
-		if item.texture != null: update_toolbox_count(box, item)
+		if item.texture != null: 
+			update_toolbox_count(box, item)
+		else:
+			box.get_child(2).visible = false
 		if box_num == Globals.toolbar_selection:
 			box.get_child(3).visible = true
 			if item.texture != null:
 				check_for_tool(item)
+				
 		
 func check_for_tool(item: TextureRect):
 	if item.texture.resource_path.contains("axe"):
@@ -70,13 +77,21 @@ func check_for_tool(item: TextureRect):
 		Globals.active_tool = Globals.shovel
 	elif item.texture.resource_path.contains("_00"):
 		Globals.active_tool = Globals.seed
+		find_holding_seed(item)
 		
+func find_holding_seed(item: TextureRect):
+	# update tol include all ojects, or find a better way to assign like string parsing
+	if item.texture.resource_path.contains(Globals.sunflower_seed):
+		Globals.holding = Globals.sunflower_seed
+	elif item.texture.resource_path.contains(Globals.pumpkin_seed):
+		Globals.holding = Globals.pumpkin_seed
+	elif item.texture.resource_path.contains(Globals.wheat_seed):
+		Globals.holding = Globals.wheat_seed
+	
 func is_tool(item):
 	return item.texture.resource_path.contains("axe") or item.texture.resource_path.contains("water") or item.texture.resource_path.contains("shovel")
 
-func update_tool_slector():
-	all_indicators_off()
-	load_tools()
+
 
 func update_toolbox_count(box :Control, item: TextureRect) -> void:
 	

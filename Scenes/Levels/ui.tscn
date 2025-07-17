@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://vl43nmp7kjx7"]
+[gd_scene load_steps=45 format=3 uid="uid://vl43nmp7kjx7"]
 
 [ext_resource type="Script" uid="uid://caaxe4m87x4rg" path="res://Scenes/Levels/ui.gd" id="1_huoym"]
 [ext_resource type="Texture2D" uid="uid://cgxf4euyh8ii6" path="res://Graphics/Elements/Crops/wood.png" id="1_xwq20"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://chx1s1dd7vqcf" path="res://Graphics/UI/selectbox_tr.png" id="5_teh6u"]
 [ext_resource type="Texture2D" uid="uid://dtg366ufa3i7q" path="res://Graphics/UI/selectbox_br.png" id="6_l7l08"]
 [ext_resource type="Texture2D" uid="uid://drubrsbwq0r88" path="res://Graphics/UI/water.png" id="8_l7l08"]
-[ext_resource type="Texture2D" uid="uid://bw3mjh7mdbafn" path="res://Graphics/UI/shovel.png" id="8_teh6u"]
 [ext_resource type="Texture2D" uid="uid://cylnag5f47jgp" path="res://Graphics/Elements/Crops/sunflower_00.png" id="11_74pwq"]
 [ext_resource type="Texture2D" uid="uid://d3u3bylo2ymey" path="res://Graphics/UI/9slice_box_white/lt_box_9slice_tc.png" id="12_cbh32"]
 [ext_resource type="Texture2D" uid="uid://coixd61m2c7ft" path="res://Graphics/UI/9slice_box_white/dt_box_9slice_c.png" id="12_ngjdw"]
@@ -36,8 +35,11 @@
 [ext_resource type="Texture2D" uid="uid://8cymjtlwwlh2" path="res://Graphics/UI/9slice_box_white/w_box_9slice_tc.png" id="34_unq0k"]
 [ext_resource type="Texture2D" uid="uid://ceshb1bchs32u" path="res://Graphics/UI/9slice_box_white/w_box_9slice_tl.png" id="35_ef7a5"]
 [ext_resource type="Texture2D" uid="uid://bqklo3arbqkyh" path="res://Graphics/UI/9slice_box_white/w_box_9slice_lc.png" id="36_7v5uf"]
+[ext_resource type="Texture2D" uid="uid://dmmix5d3okxi1" path="res://Graphics/Elements/Crops/wheat_00.png" id="36_sf573"]
 [ext_resource type="Texture2D" uid="uid://bdquqldicagar" path="res://Graphics/UI/9slice_box_white/w_box_9slice_bl.png" id="37_run8i"]
+[ext_resource type="Texture2D" uid="uid://d1pkhnqbh6c3g" path="res://Graphics/Elements/Crops/pumpkin_00.png" id="38_1rvb0"]
 [ext_resource type="Texture2D" uid="uid://torui8plnqd0" path="res://Graphics/UI/9slice_box_white/w_box_9slice_c.png" id="38_k32as"]
+[ext_resource type="Texture2D" uid="uid://ccsdkuouqj1fp" path="res://Graphics/Elements/Crops/wheat_05.png" id="39_1rvb0"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_4r020"]
 font_size = 32
@@ -3897,7 +3899,7 @@ offset_left = 15.0
 offset_top = 15.0
 offset_right = 45.0
 offset_bottom = 45.0
-texture = ExtResource("8_teh6u")
+texture = ExtResource("1_xwq20")
 stretch_mode = 5
 
 [node name="count" type="Control" parent="Toolbox/box3"]
@@ -4275,7 +4277,7 @@ offset_left = 15.0
 offset_top = 15.0
 offset_right = 45.0
 offset_bottom = 45.0
-texture = ExtResource("1_xwq20")
+texture = ExtResource("36_sf573")
 stretch_mode = 5
 
 [node name="count" type="Control" parent="Toolbox/box4"]
@@ -5030,7 +5032,7 @@ offset_left = 15.0
 offset_top = 15.0
 offset_right = 45.0
 offset_bottom = 45.0
-texture = ExtResource("2_4r020")
+texture = ExtResource("38_1rvb0")
 stretch_mode = 5
 
 [node name="count" type="Control" parent="Toolbox/box6"]
@@ -5407,6 +5409,7 @@ offset_left = 15.0
 offset_top = 15.0
 offset_right = 45.0
 offset_bottom = 45.0
+texture = ExtResource("39_1rvb0")
 stretch_mode = 5
 
 [node name="count" type="Control" parent="Toolbox/box7"]
@@ -5783,6 +5786,7 @@ offset_left = 15.0
 offset_top = 15.0
 offset_right = 45.0
 offset_bottom = 45.0
+texture = ExtResource("2_4r020")
 stretch_mode = 5
 
 [node name="count" type="Control" parent="Toolbox/box8"]

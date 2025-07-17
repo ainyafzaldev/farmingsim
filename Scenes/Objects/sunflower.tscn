@@ -1,54 +1,14 @@
-[gd_scene load_steps=16 format=3 uid="uid://bbhwkl3j60uil"]
+[gd_scene load_steps=14 format=3 uid="uid://bbhwkl3j60uil"]
 
 [ext_resource type="PackedScene" uid="uid://dag75uc2qvcmc" path="res://Scenes/Objects/crop.tscn" id="1_0aeib"]
 [ext_resource type="Script" uid="uid://cib4en4lxve6i" path="res://Scenes/Objects/sunflower.gd" id="2_gobe6"]
 [ext_resource type="Texture2D" uid="uid://cylnag5f47jgp" path="res://Graphics/Elements/Crops/sunflower_00.png" id="5_jdtj2"]
 [ext_resource type="Texture2D" uid="uid://dul4x7tsjhopa" path="res://Graphics/Elements/Crops/sunflower_01.png" id="6_qci42"]
 [ext_resource type="Texture2D" uid="uid://lpsk53u27vpc" path="res://Graphics/Elements/Crops/sunflower_02.png" id="7_rx7o8"]
-[ext_resource type="Texture2D" uid="uid://co5cw52uf8dbk" path="res://Graphics/Elements/Crops/sunflower_05.png" id="8_jdtj2"]
 [ext_resource type="Texture2D" uid="uid://bk1psvvsu1vtr" path="res://Graphics/Elements/Crops/sunflower_03.png" id="8_qci42"]
 [ext_resource type="Texture2D" uid="uid://geqpk2u8ctpf" path="res://Graphics/Elements/Crops/sunflower_04.png" id="9_rx7o8"]
 
-[sub_resource type="Animation" id="Animation_q4b6u"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("ysorting/plant:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("8_jdtj2")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("ysorting/plant:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("ysorting/plant:offset")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_lkv8t"]
+[sub_resource type="Animation" id="Animation_l4m14"]
 resource_name = "harvest"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -72,7 +32,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -6)]
+"values": [Vector2(0, -4)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -82,12 +42,12 @@ tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1.10957),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -2)]
+"values": [Vector2(0, -4)]
 }
 
-[sub_resource type="Animation" id="Animation_iwys7"]
+[sub_resource type="Animation" id="Animation_ki438"]
 resource_name = "seed"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -126,7 +86,7 @@ tracks/2/keys = {
 "values": [Vector2(0, -8)]
 }
 
-[sub_resource type="Animation" id="Animation_jdtj2"]
+[sub_resource type="Animation" id="Animation_yu66u"]
 resource_name = "seedling1"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -143,29 +103,29 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("ysorting/plant:offset")
+tracks/1/path = NodePath("ysorting/plant:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 8)]
+"values": [Vector2(0, -10)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("ysorting/plant:position")
+tracks/2/path = NodePath("ysorting/plant:offset")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -10)]
+"values": [Vector2(0, 8)]
 }
 
-[sub_resource type="Animation" id="Animation_qci42"]
+[sub_resource type="Animation" id="Animation_diusf"]
 resource_name = "seedling2"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -182,29 +142,29 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("ysorting/plant:offset")
+tracks/1/path = NodePath("ysorting/plant:position")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0.0333333),
+"times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 8)]
+"values": [Vector2(0, -12)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("ysorting/plant:position")
+tracks/2/path = NodePath("ysorting/plant:offset")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -12)]
+"values": [Vector2(0, 8)]
 }
 
-[sub_resource type="Animation" id="Animation_rx7o8"]
+[sub_resource type="Animation" id="Animation_ejfdx"]
 resource_name = "seedling3"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -243,32 +203,35 @@ tracks/2/keys = {
 "values": [Vector2(0, 0)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_q4b6u"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_pt1i1"]
 _data = {
-&"RESET": SubResource("Animation_q4b6u"),
-&"harvest": SubResource("Animation_lkv8t"),
-&"seed": SubResource("Animation_iwys7"),
-&"seedling1": SubResource("Animation_jdtj2"),
-&"seedling2": SubResource("Animation_qci42"),
-&"seedling3": SubResource("Animation_rx7o8")
+&"harvest": SubResource("Animation_l4m14"),
+&"seed": SubResource("Animation_ki438"),
+&"seedling1": SubResource("Animation_yu66u"),
+&"seedling2": SubResource("Animation_diusf"),
+&"seedling3": SubResource("Animation_ejfdx")
 }
 
 [node name="sunflower" instance=ExtResource("1_0aeib")]
 texture_filter = 1
 script = ExtResource("2_gobe6")
 
-[node name="water" parent="." index="0"]
-wait_time = 2.277
-
 [node name="plant" type="Sprite2D" parent="ysorting" index="0"]
 y_sort_enabled = true
-texture = ExtResource("8_jdtj2")
+position = Vector2(0, -4)
+texture = ExtResource("9_rx7o8")
+offset = Vector2(0, -4)
+metadata/type = "sunflower"
 
-[node name="grow" parent="." index="2"]
-wait_time = 2.0
-
-[node name="growthAnimation" type="AnimationPlayer" parent="." index="3"]
+[node name="growthAnimation" type="AnimationPlayer" parent="." index="1"]
 libraries = {
-&"": SubResource("AnimationLibrary_q4b6u")
+&"": SubResource("AnimationLibrary_pt1i1")
 }
-autoplay = "seed"
+
+[node name="grow" type="Timer" parent="." index="2"]
+wait_time = 5.0
+
+[node name="water" type="Timer" parent="." index="3"]
+wait_time = 5.0
+
+[connection signal="timeout" from="grow" to="." method="_on_grow_timeout"]

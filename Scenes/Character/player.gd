@@ -59,7 +59,9 @@ func _process(_delta: float) -> void:
 			
 		# pressed action - cannot move while performing action
 		if Input.is_action_just_pressed("action")  and Globals.can_do_action:
+			print("action")
 			Globals.is_doing_action = true
+			# received by level
 			player_performed_action.emit()
 			Globals.movement_type = Globals.action
 			
@@ -80,14 +82,17 @@ func play_animation():
 	 
 	# action, rolling and jumping need to go first since they are in addition to walking
 	if Globals.movement_type == Globals.action or Globals.is_doing_action:
-		if Globals.active_tool == Globals.wateringCan:
-			$Animations/ActionAnimations.play("watering")
-		elif Globals.active_tool == Globals.shovel:
-			$Animations/ActionAnimations.play("digging")
-		elif Globals.active_tool == Globals.axe:
-			$Animations/ActionAnimations.play("axing")
-		elif Globals.active_tool == Globals.seed:
+		if Globals.env_type == Globals.harvest:
 			$Animations/ActionAnimations.play("doing")
+		else:
+			if Globals.active_tool == Globals.wateringCan:
+				$Animations/ActionAnimations.play("watering")
+			elif Globals.active_tool == Globals.shovel:
+				$Animations/ActionAnimations.play("digging")
+			elif Globals.active_tool == Globals.axe:
+				$Animations/ActionAnimations.play("axing")
+			elif Globals.active_tool == Globals.seed:
+				$Animations/ActionAnimations.play("doing")
 			
 	elif Globals.movement_type == Globals.roll or is_rolling:
 		$Animations/ActionAnimations.play("rolling")

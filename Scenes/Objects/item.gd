@@ -1,8 +1,6 @@
 extends Area2D
 class_name item
 
-signal received_item
-
 var direction: Vector2 = Vector2.RIGHT
 var distance: int = randi_range(10, 20)
 
@@ -23,6 +21,13 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node2D) -> void:
-	Globals.inventory["wood"] += 1
-	received_item.emit()
+	var item = $image
+	if item.texture.resource_path.contains("wood"):
+		Globals.inventory["wood"]+=1
+	elif item.texture.resource_path.contains("sunflower"):
+		Globals.inventory["sunflower_05"]+=1
+	elif item.texture.resource_path.contains("wheat"):
+		Globals.inventory["wheat_05"]+=1
+	elif item.texture.resource_path.contains("pumpkin"):
+		Globals.inventory["pumpkin_05"]+=1
 	queue_free()

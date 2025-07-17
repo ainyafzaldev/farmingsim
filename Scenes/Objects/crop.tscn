@@ -6,13 +6,5 @@
 y_sort_enabled = true
 script = ExtResource("1_kqkgk")
 
-[node name="water" type="Timer" parent="."]
-
 [node name="ysorting" type="Node2D" parent="."]
 y_sort_enabled = true
-
-[node name="grow" type="Timer" parent="."]
-wait_time = 120.0
-autostart = true
-
-[connection signal="timeout" from="grow" to="." method="_on_grow_timeout"]

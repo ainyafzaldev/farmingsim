@@ -1,14 +1,14 @@
-[gd_scene load_steps=14 format=3 uid="uid://34irflf248i2"]
+[gd_scene load_steps=14 format=3 uid="uid://btt6411ay1yuf"]
 
-[ext_resource type="PackedScene" uid="uid://dag75uc2qvcmc" path="res://Scenes/Objects/crop.tscn" id="1_5v8eb"]
-[ext_resource type="Script" uid="uid://cib4en4lxve6i" path="res://Scenes/Objects/sunflower.gd" id="2_8av44"]
-[ext_resource type="Texture2D" uid="uid://doh5mgl4d4g1h" path="res://Graphics/Elements/Crops/pumpkin_04.png" id="4_53hqp"]
-[ext_resource type="Texture2D" uid="uid://bitqofv4u300v" path="res://Graphics/Elements/Crops/pumpkin_02.png" id="5_2g3rg"]
-[ext_resource type="Texture2D" uid="uid://d1pkhnqbh6c3g" path="res://Graphics/Elements/Crops/pumpkin_00.png" id="5_53hqp"]
-[ext_resource type="Texture2D" uid="uid://cxuimw5gljrbh" path="res://Graphics/Elements/Crops/pumpkin_01.png" id="6_53hqp"]
-[ext_resource type="Texture2D" uid="uid://cqi76yr0toa6j" path="res://Graphics/Elements/Crops/pumpkin_03.png" id="6_ohxb7"]
+[ext_resource type="PackedScene" uid="uid://dag75uc2qvcmc" path="res://Scenes/Objects/crop.tscn" id="1_3t3an"]
+[ext_resource type="Script" uid="uid://cib4en4lxve6i" path="res://Scenes/Objects/sunflower.gd" id="2_4u6nx"]
+[ext_resource type="Texture2D" uid="uid://cssmftkkiyxwh" path="res://Graphics/Elements/Crops/wheat_04.png" id="3_dwohd"]
+[ext_resource type="Texture2D" uid="uid://dmmix5d3okxi1" path="res://Graphics/Elements/Crops/wheat_00.png" id="4_fredu"]
+[ext_resource type="Texture2D" uid="uid://cj2bmsl5kes2l" path="res://Graphics/Elements/Crops/wheat_01.png" id="5_dwohd"]
+[ext_resource type="Texture2D" uid="uid://cq48vi0an8uj4" path="res://Graphics/Elements/Crops/wheat_02.png" id="6_dwohd"]
+[ext_resource type="Texture2D" uid="uid://5kvan6ppbpah" path="res://Graphics/Elements/Crops/wheat_03.png" id="7_dwohd"]
 
-[sub_resource type="Animation" id="Animation_53hqp"]
+[sub_resource type="Animation" id="Animation_lkv8t"]
 resource_name = "harvest"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -20,7 +20,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_53hqp")]
+"values": [ExtResource("3_dwohd")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -32,7 +32,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -4)]
+"values": [Vector2(0, -5)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -42,12 +42,12 @@ tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1.10957),
 "update": 0,
 "values": [Vector2(0, -2)]
 }
 
-[sub_resource type="Animation" id="Animation_ke4p8"]
+[sub_resource type="Animation" id="Animation_iwys7"]
 resource_name = "seed"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -59,7 +59,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("5_53hqp")]
+"values": [ExtResource("4_fredu")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -86,7 +86,7 @@ tracks/2/keys = {
 "values": [Vector2(0, -8)]
 }
 
-[sub_resource type="Animation" id="Animation_w33ji"]
+[sub_resource type="Animation" id="Animation_jdtj2"]
 resource_name = "seedling1"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -98,34 +98,34 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("6_53hqp")]
+"values": [ExtResource("5_dwohd")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("ysorting/plant:position")
+tracks/1/path = NodePath("ysorting/plant:offset")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -10)]
+"values": [Vector2(0, 3)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("ysorting/plant:offset")
+tracks/2/path = NodePath("ysorting/plant:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 8)]
+"values": [Vector2(0, -6)]
 }
 
-[sub_resource type="Animation" id="Animation_2g3rg"]
+[sub_resource type="Animation" id="Animation_qci42"]
 resource_name = "seedling2"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -137,34 +137,34 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("5_2g3rg")]
+"values": [ExtResource("6_dwohd")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("ysorting/plant:position")
+tracks/1/path = NodePath("ysorting/plant:offset")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -12)]
+"values": [Vector2(0, 2)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("ysorting/plant:offset")
+tracks/2/path = NodePath("ysorting/plant:position")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 8)]
+"values": [Vector2(0, -6)]
 }
 
-[sub_resource type="Animation" id="Animation_ohxb7"]
+[sub_resource type="Animation" id="Animation_rx7o8"]
 resource_name = "seedling3"
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -176,7 +176,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("6_ohxb7")]
+"values": [ExtResource("7_dwohd")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -188,7 +188,7 @@ tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, -4)]
+"values": [Vector2(0, -5)]
 }
 tracks/2/type = "value"
 tracks/2/imported = false
@@ -203,32 +203,32 @@ tracks/2/keys = {
 "values": [Vector2(0, 0)]
 }
 
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_53hqp"]
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_q4b6u"]
 _data = {
-&"harvest": SubResource("Animation_53hqp"),
-&"seed": SubResource("Animation_ke4p8"),
-&"seedling1": SubResource("Animation_w33ji"),
-&"seedling2": SubResource("Animation_2g3rg"),
-&"seedling3": SubResource("Animation_ohxb7")
+&"harvest": SubResource("Animation_lkv8t"),
+&"seed": SubResource("Animation_iwys7"),
+&"seedling1": SubResource("Animation_jdtj2"),
+&"seedling2": SubResource("Animation_qci42"),
+&"seedling3": SubResource("Animation_rx7o8")
 }
 
-[node name="pumpkin" instance=ExtResource("1_5v8eb")]
-texture_filter = 1
-script = ExtResource("2_8av44")
+[node name="wheat" instance=ExtResource("1_3t3an")]
+script = ExtResource("2_4u6nx")
 
 [node name="plant" type="Sprite2D" parent="ysorting" index="0"]
+texture_filter = 1
 position = Vector2(0, -8)
-texture = ExtResource("5_53hqp")
+texture = ExtResource("4_fredu")
 offset = Vector2(0, 8)
-metadata/type = "pumpkin"
+metadata/type = "wheat"
 
 [node name="growthAnimation" type="AnimationPlayer" parent="." index="1"]
 libraries = {
-&"": SubResource("AnimationLibrary_53hqp")
+&"": SubResource("AnimationLibrary_q4b6u")
 }
+autoplay = "seed"
 
 [node name="grow" type="Timer" parent="." index="2"]
-wait_time = 10.0
 
 [node name="water" type="Timer" parent="." index="3"]
 

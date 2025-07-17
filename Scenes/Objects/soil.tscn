@@ -113,6 +113,7 @@ libraries = {
 
 [node name="indicators" type="Node2D" parent="."]
 visible = false
+z_index = -10
 position = Vector2(0, -5.98)
 
 [node name="Sprite2D" type="Sprite2D" parent="indicators"]
@@ -149,6 +150,8 @@ shape = SubResource("RectangleShape2D_5ej1i")
 
 [node name="plant" type="Node2D" parent="."]
 y_sort_enabled = true
+
+[node name="spawnPoint" type="Marker2D" parent="."]
 
 [connection signal="area_entered" from="near_soil" to="." method="_on_near_soil_area_entered"]
 [connection signal="area_exited" from="near_soil" to="." method="_on_near_soil_area_exited"]
