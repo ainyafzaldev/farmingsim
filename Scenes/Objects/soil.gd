@@ -67,12 +67,16 @@ func plant_seed():
 	crop.connect("plant_stage", _on_crop_plant_stage)
 	$plant.call_deferred("add_child",crop)
 func harvest_crop():
-	print("shake")
-	await get_tree().create_timer(1.0).timeout
-	# received by level
-	harvested.emit($spawnPoint.global_position, current_direction, crop_type)
-	crop.queue_free()
-	$soilAnimation.current_animation = "soilDry"
+	if can_harvest:
+		print("shake")
+		await get_tree().create_timer(1.0).timeout
+		# received by level
+		harvested.emit($spawnPoint.global_position, current_direction, crop_type)
+		crop.queue_free()
+		$soilAnimation.current_animation = "soilDry"
+		can_grow_seed = true
+		can_harvest = false
+		
 func show_indicators():
 	$indicators.visible = true
 func hide_indicators():

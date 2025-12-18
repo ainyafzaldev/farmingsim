@@ -2,7 +2,7 @@ extends CharacterBody2D
 class_name Player
 signal player_performed_action
 
-
+@export var inv: Inv
 @onready var speed = Globals.walking_speed
 
 var facing_right:bool = true
@@ -120,4 +120,6 @@ func _on_action_animations_animation_finished(anim_name: StringName) -> void:
 		Globals.is_doing_action = false
 	if anim_name == "doing":
 		Globals.is_doing_action = false
+		if Globals.env_type == Globals.harvest:
+			Globals.env_type = Globals.soil
 		

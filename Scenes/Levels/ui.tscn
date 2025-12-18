@@ -46,11 +46,11 @@ font_size = 32
 
 [sub_resource type="Theme" id="Theme_ngjdw"]
 
-[sub_resource type="SystemFont" id="SystemFont_gtlyn"]
+[sub_resource type="SystemFont" id="SystemFont_1rvb0"]
 subpixel_positioning = 0
 
 [sub_resource type="LabelSettings" id="LabelSettings_gtlyn"]
-font = SubResource("SystemFont_gtlyn")
+font = SubResource("SystemFont_1rvb0")
 font_size = 10
 shadow_size = 0
 
@@ -102,8 +102,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -268.5
 offset_top = -100.0
-offset_right = -480.0
+offset_right = 268.5
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 4
@@ -2898,9 +2899,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -224.0
+offset_left = -256.5
 offset_top = -88.0
-offset_right = 224.0
+offset_right = 256.5
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 3
